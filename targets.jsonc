@@ -1,0 +1,17 @@
+[
+  // comes from DefinitelyTyped
+  "lodash",
+  
+  // DefinitelyTyped and has complex globals and ambient declarations
+  "node",
+  
+  "typedoc",
+  "expect",
+  
+  // they already use typedoc.  Will be interesting to see if our match or if they're broken:
+  // https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/index.html
+  "@aws-sdk/client-dynamodb",
+  
+  // Others to consider?
+  // https://yarnpkg.com/api/
+]
