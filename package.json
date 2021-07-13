@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "work": "echo noop"
+  }
+}
