@@ -1,0 +1,29 @@
+name: Worker
+on:
+  # nightly TODO should make this hourly when it's actually doing useful work
+  schedule:
+    - cron:  '0 0 * * *'
+jobs:
+  work:
+    name: "Work"
+    runs-on: ubuntu-latest
+    steps:
+      # checkout code
+      - uses: actions/checkout@v2
+      # install node
+      - name: Use Node.js 16
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: temp/npm-cache
+          key: npm-cache-work-${{ hashFiles('package-lock.json') }}
+          restore-keys: npm-cache-work-
+      - run: |
+          yarn
+          yarn work
+      # TODO the job above does not have the ability to push back to Git
+      # GH Actions supports this, so as soon as the `work` script wants to start pushing back
+      # to gh-pages, we should allow it to do so.
