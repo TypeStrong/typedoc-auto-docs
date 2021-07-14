@@ -53,7 +53,7 @@ export async function createDatabaseFromGit(opts: {
         await $`git -C ${tempDir} push HEAD:${gitRef}`;
     }
     async function discardWorktree() {
-        await $`git worktree rm ${ tempDir }`;
+        await $`git worktree remove ${ tempDir }`;
     }
 
     return {
