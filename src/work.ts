@@ -19,7 +19,7 @@ import { fileURLToPath } from "url";
 import {ParseError as JsoncParseError} from 'jsonc-parser';
 import jsoncParser from 'jsonc-parser';
 const {parse: parseJsonc} = jsoncParser;
-import { $ } from 'zx';
+import { $, nothrow } from 'zx';
 import { getPathToModuleEntrypoint } from './ts-entrypoint-resolver.js';
 import assert from 'assert';
 
@@ -36,7 +36,7 @@ if(errors.length) throw errors;
 // Create a temp directory to work in
 const tempDir = mkdtempSync(join(__root, 'tmp'));
 const docsOutputRoot = join(tempDir, 'docs');
-await $`git worktree add ${docsOutputRoot} orphan`;
+await $`git worktree add --detach ${docsOutputRoot} orphan`;
 
 interface IndexEntry {
     lib: string;
@@ -62,12 +62,19 @@ for(const lib of libsToBuild) {
     writeFileSync(join(workdir, 'package.json'), '{}');
     await $`yarn add --ignore-scripts ${lib}`;
 
-    // Figure out the lib's typings entrypoint (.d.ts not .js)
-    const entrypointPath = getPathToModuleEntrypoint(lib, workdir)!;
-    assert(entrypointPath);
-
     // output docs to this directory
     const outDir = join(docsOutputRoot, libSanitizedDir);
+
+    // Figure out the lib's typings entrypoint (.d.ts not .js)
+    const entrypointPath = getPathToModuleEntrypoint(lib, workdir)!;
+    if(!entrypointPath) {
+        mkdirpSync(outDir);
+        writeFileSync(join(outDir, 'index.html'), `
+            Failed because TS compiler could not determine entrypoint for library installed from npm.  Are you sure it bundles typings?
+        `);
+        continue;
+    }
+
     // typedoc needs a tsconfig file.  Create one
     const tsconfigPath = join(workdir, `tsconfig.json`);
     writeFileSync(tsconfigPath, JSON.stringify({
@@ -84,7 +91,15 @@ for(const lib of libsToBuild) {
     }));
     
     // NOTE not catching errors.  If non-zero exit code, will continue to the next lib
-    await $`typedoc --tsconfig ${tsconfigPath}`;
+    const result = await nothrow($`typedoc --tsconfig ${tsconfigPath}`);
+    if(result.exitCode !== 0) {
+        mkdirpSync(outDir);
+        writeFileSync(join(outDir, 'index.html'), `
+            typedoc failed.  <a href="stderr.txt">Stderr logs</a><a href="stdout.txt">Stdout logs</a>
+        `);
+        writeFileSync(join(outDir, 'stderr.txt'), result.stderr);
+        writeFileSync(join(outDir, 'stdout.txt'), result.stdout);
+    }
 }
 
 writeFileSync(join(docsOutputRoot, 'index.html'), `
