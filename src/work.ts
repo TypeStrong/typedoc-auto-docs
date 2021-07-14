@@ -36,10 +36,22 @@ if(errors.length) throw errors;
 // Create a temp directory to work in
 const tempDir = mkdtempSync(join(__root, 'tmp'));
 const docsOutputRoot = join(tempDir, 'docs');
+await $`git worktree add ${docsOutputRoot} orphan`;
+
+interface IndexEntry {
+    lib: string;
+    dir: string;
+}
+
+const indexEntries: IndexEntry[] = [];
 
 // For each lib, render it
 for(const lib of libsToBuild) {
     const libSanitizedDir = lib.replace(/[@\/]/g, '_');
+    indexEntries.push({
+        lib, dir: libSanitizedDir
+    });
+
     const workdir = join(tempDir, libSanitizedDir);
 
     mkdirpSync(workdir);
@@ -74,3 +86,18 @@ for(const lib of libsToBuild) {
     // NOTE not catching errors.  If non-zero exit code, will continue to the next lib
     await $`typedoc --tsconfig ${tsconfigPath}`;
 }
+
+writeFileSync(join(docsOutputRoot, 'index.html'), `
+    <ul>
+    ${
+        indexEntries.map(({lib, dir}) => `
+            <li><a href="${dir}">${lib}</a></li>
+        `).join('')
+    }
+    </ul>
+`);
+writeFileSync(join(docsOutputRoot, '.nojekyll'), '');
+
+await $`git -C ${docsOutputRoot} add --all`;
+await $`git -C ${docsOutputRoot} commit -m "overwrite docs with new build (TODO stop overwriting everything!)"`;
+await $`git -C ${docsOutputRoot} push -f origin HEAD:gh-pages`;
