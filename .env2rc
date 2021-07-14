@@ -1,0 +1,2 @@
+# Run typescript files as native ESM
+**.ts=node --loader $root/node_modules/ts-node/esm.mjs

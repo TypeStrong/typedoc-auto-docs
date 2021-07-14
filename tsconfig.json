@@ -1,0 +1,22 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "ts-node": {
+    "transpileOnly": true,
+    // "transpiler": "ts-node/transpilers/swc-experimental"
+  },
+  "compilerOptions": {
+    "module": "ESNext",
+    "incremental": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist", 
+    "rootDir": "./src",
+    "importHelpers": true,
+    "isolatedModules": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "types": ["node"],
+    "esModuleInterop": true,
+  }
+}
