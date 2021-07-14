@@ -14,4 +14,6 @@
   
   // Others to consider?
   // https://yarnpkg.com/api/
+  // This one is in a monorepo; I think Gerrit0 recently added monorepo support to typedoc.
+  // Although if we are rendering from npm, maybe it won't matter to us?
 ]
