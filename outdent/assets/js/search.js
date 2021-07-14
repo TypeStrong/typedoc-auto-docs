@@ -1,0 +1,1 @@
+window.searchData = {"kinds":{"16777216":"Reference"},"rows":[{"id":0,"kind":16777216,"name":"outdent","url":"modules.html#outdent","classes":"tsd-kind-reference"}],"index":{"version":"2.3.9","fields":["name","parent"],"fieldVectors":[["name/0",[0,2.877]],["parent/0",[]]],"invertedIndex":[["outdent",{"_index":0,"name":{"0":{}},"parent":{}}]],"pipeline":[]}}

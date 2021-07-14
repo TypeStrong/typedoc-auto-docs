@@ -1,0 +1,932 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Reflection | typedoc</title>
+	<meta name="description" content="Documentation for typedoc">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">typedoc</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">typedoc</a>
+				</li>
+				<li>
+					<a href="Reflection.html">Reflection</a>
+				</li>
+			</ul>
+			<h1>Class Reflection</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Base class for all reflection classes.</p>
+					</div>
+					<p>While generating a documentation, TypeDoc generates an instance of <a href="../interfaces/JSONOutput.ProjectReflection.html">ProjectReflection</a>
+						as the root for all reflections within the project. All other reflections are represented
+					by the <a href="../interfaces/JSONOutput.DeclarationReflection.html">DeclarationReflection</a> class.</p>
+					<p>This base class exposes the basic properties one may use to traverse the reflection tree.
+						You can use the <a href="NavigationItem.html#children">children</a> and <a href="Reflection.html#parent">parent</a> properties to walk the tree. The <a href="../interfaces/JSONOutput.ReferenceReflection.html#groups">groups</a> property
+					contains a list of all children grouped and sorted for being rendered.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Reflection</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="../interfaces/TypeParameterContainer.html" class="tsd-signature-type" data-tsd-kind="Interface">TypeParameterContainer</a>
+							</li>
+							<li>
+								<a href="ContainerReflection.html" class="tsd-signature-type" data-tsd-kind="Class">ContainerReflection</a>
+							</li>
+							<li>
+								<a href="ParameterReflection.html" class="tsd-signature-type" data-tsd-kind="Class">ParameterReflection</a>
+							</li>
+							<li>
+								<a href="SignatureReflection.html" class="tsd-signature-type" data-tsd-kind="Class">SignatureReflection</a>
+							</li>
+							<li>
+								<a href="TypeParameterReflection.html" class="tsd-signature-type" data-tsd-kind="Class">TypeParameterReflection</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="Reflection.html#_alias" class="tsd-kind-icon">_alias</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="Reflection.html#_aliases" class="tsd-kind-icon">_aliases</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#anchor" class="tsd-kind-icon">anchor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#comment" class="tsd-kind-icon">comment</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#cssClasses" class="tsd-kind-icon">css<wbr>Classes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#decorates" class="tsd-kind-icon">decorates</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#decorators" class="tsd-kind-icon">decorators</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#flags" class="tsd-kind-icon">flags</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#hasOwnDocument" class="tsd-kind-icon">has<wbr>Own<wbr>Document</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#kind" class="tsd-kind-icon">kind</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#kindString" class="tsd-kind-icon">kind<wbr>String</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#originalName" class="tsd-kind-icon">original<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#parent" class="tsd-kind-icon">parent</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#sources" class="tsd-kind-icon">sources</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#url" class="tsd-kind-icon">url</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#project" class="tsd-kind-icon">project</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#findReflectionByName" class="tsd-kind-icon">find<wbr>Reflection<wbr>ByName</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#getAlias" class="tsd-kind-icon">get<wbr>Alias</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#getChildByName" class="tsd-kind-icon">get<wbr>Child<wbr>ByName</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#getFullName" class="tsd-kind-icon">get<wbr>Full<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#hasComment" class="tsd-kind-icon">has<wbr>Comment</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#hasGetterOrSetter" class="tsd-kind-icon">has<wbr>Getter<wbr>OrSetter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#isProject" class="tsd-kind-icon">is<wbr>Project</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#kindOf" class="tsd-kind-icon">kind<wbr>Of</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#setFlag" class="tsd-kind-icon">set<wbr>Flag</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#toString" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#toStringHierarchy" class="tsd-kind-icon">to<wbr>String<wbr>Hierarchy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="Reflection.html#traverse" class="tsd-kind-icon">traverse</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Reflection<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, kind<span class="tsd-signature-symbol">: </span><a href="../enums/ReflectionKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ReflectionKind</a>, parent<span class="tsd-signature-symbol">?: </span><a href="Reflection.html" class="tsd-signature-type" data-tsd-kind="Class">Reflection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Reflection.html" class="tsd-signature-type" data-tsd-kind="Class">Reflection</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:248</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a new BaseReflection instance.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>kind: <a href="../enums/ReflectionKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ReflectionKind</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> parent: <a href="Reflection.html" class="tsd-signature-type" data-tsd-kind="Class">Reflection</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Reflection.html" class="tsd-signature-type" data-tsd-kind="Class">Reflection</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external">
+					<a name="_alias" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> _alias</h3>
+					<div class="tsd-signature tsd-kind-icon">_alias<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:243</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Url safe alias for this reflection.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>see</dt>
+							<dd><p>[[BaseReflection.getAlias]]</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external">
+					<a name="_aliases" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> _aliases</h3>
+					<div class="tsd-signature tsd-kind-icon">_aliases<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:244</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="anchor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> anchor</h3>
+					<div class="tsd-signature tsd-kind-icon">anchor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:224</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The name of the anchor of this child.
+							TODO: Reflections shouldn&#39;t know anchors exist. Move this to a serializer.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="comment" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> comment</h3>
+					<div class="tsd-signature tsd-kind-icon">comment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Comment</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:202</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The parsed documentation comment attached to this reflection.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="cssClasses" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> css<wbr>Classes</h3>
+					<div class="tsd-signature tsd-kind-icon">css<wbr>Classes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:237</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A list of generated css classes that should be applied to representations of this
+								reflection in the generated markup.
+							TODO: Reflections shouldn&#39;t know about CSS. Move this property to the correct serializer.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="decorates" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> decorates</h3>
+					<div class="tsd-signature tsd-kind-icon">decorates<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Type</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:214</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A list of all types that are decorated by this reflection.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="decorators" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> decorators</h3>
+					<div class="tsd-signature tsd-kind-icon">decorators<span class="tsd-signature-symbol">:</span> <a href="../interfaces/Decorator.html" class="tsd-signature-type" data-tsd-kind="Interface">Decorator</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:210</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A list of all decorators attached to this reflection.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="flags" class="tsd-anchor"></a>
+					<h3>flags</h3>
+					<div class="tsd-signature tsd-kind-icon">flags<span class="tsd-signature-symbol">:</span> <a href="ReflectionFlags.html" class="tsd-signature-type" data-tsd-kind="Class">ReflectionFlags</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:193</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="hasOwnDocument" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> has<wbr>Own<wbr>Document</h3>
+					<div class="tsd-signature tsd-kind-icon">has<wbr>Own<wbr>Document<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:231</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Is the url pointing to an individual document?</p>
+						</div>
+						<p>When FALSE, the url points to an anchor tag on a page of a different reflection.
+						TODO: Reflections shouldn&#39;t know how they are rendered. Move this to the correct serializer.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:175</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Unique id of this reflection.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="kind" class="tsd-anchor"></a>
+					<h3>kind</h3>
+					<div class="tsd-signature tsd-kind-icon">kind<span class="tsd-signature-symbol">:</span> <a href="../enums/ReflectionKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ReflectionKind</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:187</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The kind of this reflection.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="kindString" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> kind<wbr>String</h3>
+					<div class="tsd-signature tsd-kind-icon">kind<wbr>String<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:192</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The human readable string representation of the kind of this reflection.
+							Set during the resolution phase by GroupPlugin</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:179</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The symbol name of this reflection.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="originalName" class="tsd-anchor"></a>
+					<h3>original<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">original<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:183</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The original name of the TypeScript declaration.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="parent" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> parent</h3>
+					<div class="tsd-signature tsd-kind-icon">parent<span class="tsd-signature-symbol">:</span> <a href="Reflection.html" class="tsd-signature-type" data-tsd-kind="Class">Reflection</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:197</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The reflection this reflection is a child of.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="sources" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> sources</h3>
+					<div class="tsd-signature tsd-kind-icon">sources<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SourceReference</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:206</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A list of all source files that contributed to this reflection.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="url" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> url</h3>
+					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:219</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The url of this reflection in the generated documentation.
+							TODO: Reflections shouldn&#39;t know urls exist. Move this to a serializer.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-external">
+					<a name="project" class="tsd-anchor"></a>
+					<h3>project</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> project<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ProjectReflection.html" class="tsd-signature-type" data-tsd-kind="Class">ProjectReflection</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:198</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="ProjectReflection.html" class="tsd-signature-type" data-tsd-kind="Class">ProjectReflection</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="findReflectionByName" class="tsd-anchor"></a>
+					<h3>find<wbr>Reflection<wbr>ByName</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Reflection<wbr>ByName<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Reflection.html" class="tsd-signature-type" data-tsd-kind="Class">Reflection</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:293</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Try to find a reflection by its name.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>arg: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Reflection.html" class="tsd-signature-type" data-tsd-kind="Class">Reflection</a></h4>
+							<p>The found reflection or null.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getAlias" class="tsd-anchor"></a>
+					<h3>get<wbr>Alias</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Alias<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:269</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return an url safe alias for this reflection.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getChildByName" class="tsd-anchor"></a>
+					<h3>get<wbr>Child<wbr>ByName</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Child<wbr>ByName<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Reflection.html" class="tsd-signature-type" data-tsd-kind="Class">Reflection</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:283</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return a child by its name.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>arg: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Reflection.html" class="tsd-signature-type" data-tsd-kind="Class">Reflection</a></h4>
+							<p>The found child or undefined.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getFullName" class="tsd-anchor"></a>
+					<h3>get<wbr>Full<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Full<wbr>Name<span class="tsd-signature-symbol">(</span>separator<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:261</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return the full name of this reflection.</p>
+								</div>
+								<p>The full name contains the name of this reflection and the names of all parent reflections.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> separator: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Separator used to join the names of the reflections.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The full name of this reflection.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="hasComment" class="tsd-anchor"></a>
+					<h3>has<wbr>Comment</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Comment<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:275</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Has this reflection a visible comment?</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>TRUE when this reflection has a visible comment.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="hasGetterOrSetter" class="tsd-anchor"></a>
+					<h3>has<wbr>Getter<wbr>OrSetter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Getter<wbr>OrSetter<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:276</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="isProject" class="tsd-anchor"></a>
+					<h3>is<wbr>Project</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Project<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span><span class="tsd-signature-symbol"> is </span><a href="ProjectReflection.html" class="tsd-signature-type" data-tsd-kind="Class">ProjectReflection</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:287</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return whether this reflection is the root / project reflection.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span><span class="tsd-signature-symbol"> is </span><a href="ProjectReflection.html" class="tsd-signature-type" data-tsd-kind="Class">ProjectReflection</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="kindOf" class="tsd-anchor"></a>
+					<h3>kind<wbr>Of</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">kind<wbr>Of<span class="tsd-signature-symbol">(</span>kind<span class="tsd-signature-symbol">: </span><a href="../enums/ReflectionKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ReflectionKind</a><span class="tsd-signature-symbol"> | </span><a href="../enums/ReflectionKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ReflectionKind</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:252</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Test whether this reflection is of the given kind.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>kind: <a href="../enums/ReflectionKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ReflectionKind</a><span class="tsd-signature-symbol"> | </span><a href="../enums/ReflectionKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ReflectionKind</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="setFlag" class="tsd-anchor"></a>
+					<h3>set<wbr>Flag</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Flag<span class="tsd-signature-symbol">(</span>flag<span class="tsd-signature-symbol">: </span><a href="../enums/ReflectionFlag.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ReflectionFlag</a>, value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:265</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set a flag on this reflection.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>flag: <a href="../enums/ReflectionFlag.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ReflectionFlag</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="toString" class="tsd-anchor"></a>
+					<h3>to<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:306</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return a string representation of this reflection.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="toStringHierarchy" class="tsd-anchor"></a>
+					<h3>to<wbr>String<wbr>Hierarchy</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<wbr>Hierarchy<span class="tsd-signature-symbol">(</span>indent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:312</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return a string representation of this reflection and all of its children.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> indent: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Used internally to indent child reflections.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="traverse" class="tsd-anchor"></a>
+					<h3>traverse</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">traverse<span class="tsd-signature-symbol">(</span>_callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TraverseCallback</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpwKZhgL/typedoc/node_modules/typedoc/dist/lib/models/reflections/abstract.d.ts:302</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Traverse all potential child reflections of this reflection.</p>
+								</div>
+								<p>The given callback will be invoked for all children, signatures and type parameters
+								attached to this reflection.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>_callback: <span class="tsd-signature-type">TraverseCallback</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-is-external">
+						<a href="Reflection.html" class="tsd-kind-icon">Reflection</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external">
+								<a href="Reflection.html#_alias" class="tsd-kind-icon">_alias</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external">
+								<a href="Reflection.html#_aliases" class="tsd-kind-icon">_aliases</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#anchor" class="tsd-kind-icon">anchor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#comment" class="tsd-kind-icon">comment</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#cssClasses" class="tsd-kind-icon">css<wbr>Classes</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#decorates" class="tsd-kind-icon">decorates</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#decorators" class="tsd-kind-icon">decorators</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#flags" class="tsd-kind-icon">flags</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#hasOwnDocument" class="tsd-kind-icon">has<wbr>Own<wbr>Document</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#kind" class="tsd-kind-icon">kind</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#kindString" class="tsd-kind-icon">kind<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#originalName" class="tsd-kind-icon">original<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#parent" class="tsd-kind-icon">parent</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#sources" class="tsd-kind-icon">sources</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#url" class="tsd-kind-icon">url</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#project" class="tsd-kind-icon">project</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#findReflectionByName" class="tsd-kind-icon">find<wbr>Reflection<wbr>ByName</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#getAlias" class="tsd-kind-icon">get<wbr>Alias</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#getChildByName" class="tsd-kind-icon">get<wbr>Child<wbr>ByName</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#getFullName" class="tsd-kind-icon">get<wbr>Full<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#hasComment" class="tsd-kind-icon">has<wbr>Comment</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#hasGetterOrSetter" class="tsd-kind-icon">has<wbr>Getter<wbr>OrSetter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#isProject" class="tsd-kind-icon">is<wbr>Project</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#kindOf" class="tsd-kind-icon">kind<wbr>Of</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#setFlag" class="tsd-kind-icon">set<wbr>Flag</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#toString" class="tsd-kind-icon">to<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#toStringHierarchy" class="tsd-kind-icon">to<wbr>String<wbr>Hierarchy</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="Reflection.html#traverse" class="tsd-kind-icon">traverse</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

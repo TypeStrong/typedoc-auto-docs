@@ -1,0 +1,559 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DocumentRegistry | typedoc</title>
+	<meta name="description" content="Documentation for typedoc">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">typedoc</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">typedoc</a>
+				</li>
+				<li>
+					<a href="../modules/TypeScript.html">TypeScript</a>
+				</li>
+				<li>
+					<a href="TypeScript.DocumentRegistry.html">DocumentRegistry</a>
+				</li>
+			</ul>
+			<h1>Interface DocumentRegistry</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The document registry represents a store of SourceFile objects that can be shared between
+							multiple LanguageService instances. A LanguageService instance holds on the SourceFile (AST)
+							of files in the context.
+							SourceFile objects account for most of the memory usage by the language service. Sharing
+							the same DocumentRegistry instance between different instances of LanguageService allow
+							for more efficient memory utilization since all projects will share at least the library
+						file (lib.d.ts).</p>
+					</div>
+					<p>A more advanced use of the document registry is to serialize sourceFile objects to disk
+					and re-hydrate them when needed.</p>
+					<p>To create a default DocumentRegistry, use createDocumentRegistry to create one, and pass it
+					to all subsequent createLanguageService calls.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">DocumentRegistry</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="TypeScript.DocumentRegistry.html#acquireDocument" class="tsd-kind-icon">acquire<wbr>Document</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="TypeScript.DocumentRegistry.html#acquireDocumentWithKey" class="tsd-kind-icon">acquire<wbr>Document<wbr>With<wbr>Key</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="TypeScript.DocumentRegistry.html#getKeyForCompilationSettings" class="tsd-kind-icon">get<wbr>Key<wbr>For<wbr>Compilation<wbr>Settings</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="TypeScript.DocumentRegistry.html#releaseDocument" class="tsd-kind-icon">release<wbr>Document</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="TypeScript.DocumentRegistry.html#releaseDocumentWithKey" class="tsd-kind-icon">release<wbr>Document<wbr>With<wbr>Key</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="TypeScript.DocumentRegistry.html#reportStats" class="tsd-kind-icon">report<wbr>Stats</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="TypeScript.DocumentRegistry.html#updateDocument" class="tsd-kind-icon">update<wbr>Document</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="TypeScript.DocumentRegistry.html#updateDocumentWithKey" class="tsd-kind-icon">update<wbr>Document<wbr>With<wbr>Key</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="acquireDocument" class="tsd-anchor"></a>
+					<h3>acquire<wbr>Document</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">acquire<wbr>Document<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, compilationSettings<span class="tsd-signature-symbol">: </span><a href="TypeScript.CompilerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CompilerOptions</a>, scriptSnapshot<span class="tsd-signature-symbol">: </span><a href="TypeScript.IScriptSnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">IScriptSnapshot</a>, version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, scriptKind<span class="tsd-signature-symbol">?: </span><a href="../enums/TypeScript.ScriptKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScriptKind</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="TypeScript.SourceFile.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceFile</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/typescript/lib/typescript.d.ts:6515</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Request a stored SourceFile with a given fileName and compilationSettings.
+										The first call to acquire will call createLanguageServiceSourceFile to generate
+									the SourceFile if was not found in the registry.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the file requested</p>
+									</div>
+								</li>
+								<li>
+									<h5>compilationSettings: <a href="TypeScript.CompilerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CompilerOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Some compilation settings like target affects the
+											shape of a the resulting SourceFile. This allows the DocumentRegistry to store
+										multiple copies of the same file for different compilation settings.</p>
+									</div>
+								</li>
+								<li>
+									<h5>scriptSnapshot: <a href="TypeScript.IScriptSnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">IScriptSnapshot</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Text of the file. Only used if the file was not found
+										in the registry and a new one was created.</p>
+									</div>
+								</li>
+								<li>
+									<h5>version: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Current version of the file. Only used if the file was not found
+										in the registry and a new one was created.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scriptKind: <a href="../enums/TypeScript.ScriptKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScriptKind</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="TypeScript.SourceFile.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceFile</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="acquireDocumentWithKey" class="tsd-anchor"></a>
+					<h3>acquire<wbr>Document<wbr>With<wbr>Key</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">acquire<wbr>Document<wbr>With<wbr>Key<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, path<span class="tsd-signature-symbol">: </span><a href="../modules/TypeScript.html#Path" class="tsd-signature-type" data-tsd-kind="Type alias">Path</a>, compilationSettings<span class="tsd-signature-symbol">: </span><a href="TypeScript.CompilerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CompilerOptions</a>, key<span class="tsd-signature-symbol">: </span><a href="../modules/TypeScript.html#DocumentRegistryBucketKey" class="tsd-signature-type" data-tsd-kind="Type alias">DocumentRegistryBucketKey</a>, scriptSnapshot<span class="tsd-signature-symbol">: </span><a href="TypeScript.IScriptSnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">IScriptSnapshot</a>, version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, scriptKind<span class="tsd-signature-symbol">?: </span><a href="../enums/TypeScript.ScriptKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScriptKind</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="TypeScript.SourceFile.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceFile</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/typescript/lib/typescript.d.ts:6516</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>path: <a href="../modules/TypeScript.html#Path" class="tsd-signature-type" data-tsd-kind="Type alias">Path</a></h5>
+								</li>
+								<li>
+									<h5>compilationSettings: <a href="TypeScript.CompilerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CompilerOptions</a></h5>
+								</li>
+								<li>
+									<h5>key: <a href="../modules/TypeScript.html#DocumentRegistryBucketKey" class="tsd-signature-type" data-tsd-kind="Type alias">DocumentRegistryBucketKey</a></h5>
+								</li>
+								<li>
+									<h5>scriptSnapshot: <a href="TypeScript.IScriptSnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">IScriptSnapshot</a></h5>
+								</li>
+								<li>
+									<h5>version: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scriptKind: <a href="../enums/TypeScript.ScriptKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScriptKind</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="TypeScript.SourceFile.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceFile</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="getKeyForCompilationSettings" class="tsd-anchor"></a>
+					<h3>get<wbr>Key<wbr>For<wbr>Compilation<wbr>Settings</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Key<wbr>For<wbr>Compilation<wbr>Settings<span class="tsd-signature-symbol">(</span>settings<span class="tsd-signature-symbol">: </span><a href="TypeScript.CompilerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CompilerOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/TypeScript.html#DocumentRegistryBucketKey" class="tsd-signature-type" data-tsd-kind="Type alias">DocumentRegistryBucketKey</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/typescript/lib/typescript.d.ts:6531</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>settings: <a href="TypeScript.CompilerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CompilerOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/TypeScript.html#DocumentRegistryBucketKey" class="tsd-signature-type" data-tsd-kind="Type alias">DocumentRegistryBucketKey</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="releaseDocument" class="tsd-anchor"></a>
+					<h3>release<wbr>Document</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">release<wbr>Document<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, compilationSettings<span class="tsd-signature-symbol">: </span><a href="TypeScript.CompilerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CompilerOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">release<wbr>Document<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, compilationSettings<span class="tsd-signature-symbol">: </span><a href="TypeScript.CompilerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CompilerOptions</a>, scriptKind<span class="tsd-signature-symbol">: </span><a href="../enums/TypeScript.ScriptKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScriptKind</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/typescript/lib/typescript.d.ts:6542</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>pass scriptKind for correctness</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>compilationSettings: <a href="TypeScript.CompilerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CompilerOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/typescript/lib/typescript.d.ts:6553</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Informs the DocumentRegistry that a file is not needed any longer.</p>
+								</div>
+								<p>Note: It is not allowed to call release on a SourceFile that was not acquired from
+								this registry originally.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the file to be released</p>
+									</div>
+								</li>
+								<li>
+									<h5>compilationSettings: <a href="TypeScript.CompilerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CompilerOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The compilation settings used to acquire the file</p>
+									</div>
+								</li>
+								<li>
+									<h5>scriptKind: <a href="../enums/TypeScript.ScriptKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScriptKind</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The script kind of the file to be released</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="releaseDocumentWithKey" class="tsd-anchor"></a>
+					<h3>release<wbr>Document<wbr>With<wbr>Key</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">release<wbr>Document<wbr>With<wbr>Key<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><a href="../modules/TypeScript.html#Path" class="tsd-signature-type" data-tsd-kind="Type alias">Path</a>, key<span class="tsd-signature-symbol">: </span><a href="../modules/TypeScript.html#DocumentRegistryBucketKey" class="tsd-signature-type" data-tsd-kind="Type alias">DocumentRegistryBucketKey</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">release<wbr>Document<wbr>With<wbr>Key<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><a href="../modules/TypeScript.html#Path" class="tsd-signature-type" data-tsd-kind="Type alias">Path</a>, key<span class="tsd-signature-symbol">: </span><a href="../modules/TypeScript.html#DocumentRegistryBucketKey" class="tsd-signature-type" data-tsd-kind="Type alias">DocumentRegistryBucketKey</a>, scriptKind<span class="tsd-signature-symbol">: </span><a href="../enums/TypeScript.ScriptKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScriptKind</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/typescript/lib/typescript.d.ts:6556</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>pass scriptKind for correctness</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <a href="../modules/TypeScript.html#Path" class="tsd-signature-type" data-tsd-kind="Type alias">Path</a></h5>
+								</li>
+								<li>
+									<h5>key: <a href="../modules/TypeScript.html#DocumentRegistryBucketKey" class="tsd-signature-type" data-tsd-kind="Type alias">DocumentRegistryBucketKey</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/typescript/lib/typescript.d.ts:6557</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <a href="../modules/TypeScript.html#Path" class="tsd-signature-type" data-tsd-kind="Type alias">Path</a></h5>
+								</li>
+								<li>
+									<h5>key: <a href="../modules/TypeScript.html#DocumentRegistryBucketKey" class="tsd-signature-type" data-tsd-kind="Type alias">DocumentRegistryBucketKey</a></h5>
+								</li>
+								<li>
+									<h5>scriptKind: <a href="../enums/TypeScript.ScriptKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScriptKind</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="reportStats" class="tsd-anchor"></a>
+					<h3>report<wbr>Stats</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">report<wbr>Stats<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/typescript/lib/typescript.d.ts:6558</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="updateDocument" class="tsd-anchor"></a>
+					<h3>update<wbr>Document</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Document<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, compilationSettings<span class="tsd-signature-symbol">: </span><a href="TypeScript.CompilerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CompilerOptions</a>, scriptSnapshot<span class="tsd-signature-symbol">: </span><a href="TypeScript.IScriptSnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">IScriptSnapshot</a>, version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, scriptKind<span class="tsd-signature-symbol">?: </span><a href="../enums/TypeScript.ScriptKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScriptKind</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="TypeScript.SourceFile.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceFile</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/typescript/lib/typescript.d.ts:6529</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Request an updated version of an already existing SourceFile with a given fileName
+										and compilationSettings. The update will in-turn call updateLanguageServiceSourceFile
+									to get an updated SourceFile.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the file requested</p>
+									</div>
+								</li>
+								<li>
+									<h5>compilationSettings: <a href="TypeScript.CompilerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CompilerOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Some compilation settings like target affects the
+											shape of a the resulting SourceFile. This allows the DocumentRegistry to store
+										multiple copies of the same file for different compilation settings.</p>
+									</div>
+								</li>
+								<li>
+									<h5>scriptSnapshot: <a href="TypeScript.IScriptSnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">IScriptSnapshot</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Text of the file.</p>
+									</div>
+								</li>
+								<li>
+									<h5>version: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Current version of the file.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scriptKind: <a href="../enums/TypeScript.ScriptKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScriptKind</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="TypeScript.SourceFile.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceFile</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="updateDocumentWithKey" class="tsd-anchor"></a>
+					<h3>update<wbr>Document<wbr>With<wbr>Key</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Document<wbr>With<wbr>Key<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, path<span class="tsd-signature-symbol">: </span><a href="../modules/TypeScript.html#Path" class="tsd-signature-type" data-tsd-kind="Type alias">Path</a>, compilationSettings<span class="tsd-signature-symbol">: </span><a href="TypeScript.CompilerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CompilerOptions</a>, key<span class="tsd-signature-symbol">: </span><a href="../modules/TypeScript.html#DocumentRegistryBucketKey" class="tsd-signature-type" data-tsd-kind="Type alias">DocumentRegistryBucketKey</a>, scriptSnapshot<span class="tsd-signature-symbol">: </span><a href="TypeScript.IScriptSnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">IScriptSnapshot</a>, version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, scriptKind<span class="tsd-signature-symbol">?: </span><a href="../enums/TypeScript.ScriptKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScriptKind</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="TypeScript.SourceFile.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceFile</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/typescript/lib/typescript.d.ts:6530</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>path: <a href="../modules/TypeScript.html#Path" class="tsd-signature-type" data-tsd-kind="Type alias">Path</a></h5>
+								</li>
+								<li>
+									<h5>compilationSettings: <a href="TypeScript.CompilerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CompilerOptions</a></h5>
+								</li>
+								<li>
+									<h5>key: <a href="../modules/TypeScript.html#DocumentRegistryBucketKey" class="tsd-signature-type" data-tsd-kind="Type alias">DocumentRegistryBucketKey</a></h5>
+								</li>
+								<li>
+									<h5>scriptSnapshot: <a href="TypeScript.IScriptSnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">IScriptSnapshot</a></h5>
+								</li>
+								<li>
+									<h5>version: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scriptKind: <a href="../enums/TypeScript.ScriptKind.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScriptKind</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="TypeScript.SourceFile.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceFile</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Externals</span>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-external">
+						<a href="../modules/JSONOutput.html">JSONOutput</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-external">
+						<a href="../modules/ReflectionKind.html">Reflection<wbr>Kind</a>
+					</li>
+					<li class="current tsd-kind-namespace tsd-is-external">
+						<a href="../modules/TypeScript.html">Type<wbr>Script</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+						<a href="../modules/TypeScript.ScriptSnapshot.html">Type<wbr>Script.<wbr>Script<wbr>Snapshot</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+						<a href="../modules/TypeScript.server.html">Type<wbr>Script.server</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-namespace tsd-is-external">
+						<a href="TypeScript.DocumentRegistry.html" class="tsd-kind-icon">Document<wbr>Registry</a>
+						<ul>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="TypeScript.DocumentRegistry.html#acquireDocument" class="tsd-kind-icon">acquire<wbr>Document</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="TypeScript.DocumentRegistry.html#acquireDocumentWithKey" class="tsd-kind-icon">acquire<wbr>Document<wbr>With<wbr>Key</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="TypeScript.DocumentRegistry.html#getKeyForCompilationSettings" class="tsd-kind-icon">get<wbr>Key<wbr>For<wbr>Compilation<wbr>Settings</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="TypeScript.DocumentRegistry.html#releaseDocument" class="tsd-kind-icon">release<wbr>Document</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="TypeScript.DocumentRegistry.html#releaseDocumentWithKey" class="tsd-kind-icon">release<wbr>Document<wbr>With<wbr>Key</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="TypeScript.DocumentRegistry.html#reportStats" class="tsd-kind-icon">report<wbr>Stats</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="TypeScript.DocumentRegistry.html#updateDocument" class="tsd-kind-icon">update<wbr>Document</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="TypeScript.DocumentRegistry.html#updateDocumentWithKey" class="tsd-kind-icon">update<wbr>Document<wbr>With<wbr>Key</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
