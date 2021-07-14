@@ -82,7 +82,8 @@ for(const lib of libsToBuild) {
         compilerOptions: {
             target: 'esnext',
             module: 'esnext',
-            moduleResolution: 'node'
+            moduleResolution: 'node',
+            esModuleInterop: true
         },
         typedocOptions: {
             entryPoints: [entrypointPath],
