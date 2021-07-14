@@ -54,8 +54,8 @@ for(const lib of libsToBuild) {
     const entrypointPath = getPathToModuleEntrypoint(lib, workdir)!;
     assert(entrypointPath);
 
-    // cd(join(workdir, `node_modules/${lib}`));
-
+    // output docs to this directory
+    const outDir = join(docsOutputRoot, libSanitizedDir);
     // typedoc needs a tsconfig file.  Create one
     const tsconfigPath = join(workdir, `tsconfig.json`);
     writeFileSync(tsconfigPath, JSON.stringify({
@@ -64,11 +64,13 @@ for(const lib of libsToBuild) {
             target: 'esnext',
             module: 'esnext',
             moduleResolution: 'node'
+        },
+        typedocOptions: {
+            entryPoints: [entrypointPath],
+            out: outDir
         }
     }));
-    // output docs to this directory
-    const outDir = join(docsOutputRoot, libSanitizedDir);
     
     // NOTE not catching errors.  If non-zero exit code, will continue to the next lib
-    await $`typedoc --tsconfig ${tsconfigPath} --entryPoints ${entrypointPath} --out ${outDir}`;
+    await $`typedoc --tsconfig ${tsconfigPath}`;
 }
