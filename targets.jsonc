@@ -1,9 +1,11 @@
 [
   // comes from DefinitelyTyped
-  // "@types/lodash",
+  // TODO should not have @types here
+  // Scripts automatically figure out if we need to install from @types or not
+  "@types/lodash",
   
   // DefinitelyTyped and has complex globals and ambient declarations
-  // "@types/node",
+  "@types/node",
 
   "outdent",
   "ts-node",

@@ -60,7 +60,7 @@ for(const lib of libsToBuild) {
     // Create empty package.json, then ask yarn to install the lib as a dependency.
     // This creates a node_modules directory
     writeFileSync(join(workdir, 'package.json'), '{}');
-    await $`yarn add --ignore-scripts ${lib}`;
+    await $`npm install --ignore-scripts ${lib}`;
 
     // output docs to this directory
     const outDir = join(docsOutputRoot, libSanitizedDir);
