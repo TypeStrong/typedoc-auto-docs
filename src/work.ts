@@ -36,10 +36,22 @@ if(errors.length) throw errors;
 // Create a temp directory to work in
 const tempDir = mkdtempSync(join(__root, 'tmp'));
 const docsOutputRoot = join(tempDir, 'docs');
+await $`git worktree add ${docsOutputRoot} orphan`;
+
+interface IndexEntry {
+    lib: string;
+    dir: string;
+}
+
+const indexEntries: IndexEntry[] = [];
 
 // For each lib, render it
 for(const lib of libsToBuild) {
     const libSanitizedDir = lib.replace(/[@\/]/g, '_');
+    indexEntries.push({
+        lib, dir: libSanitizedDir
+    });
+
     const workdir = join(tempDir, libSanitizedDir);
 
     mkdirpSync(workdir);
@@ -54,8 +66,8 @@ for(const lib of libsToBuild) {
     const entrypointPath = getPathToModuleEntrypoint(lib, workdir)!;
     assert(entrypointPath);
 
-    // cd(join(workdir, `node_modules/${lib}`));
-
+    // output docs to this directory
+    const outDir = join(docsOutputRoot, libSanitizedDir);
     // typedoc needs a tsconfig file.  Create one
     const tsconfigPath = join(workdir, `tsconfig.json`);
     writeFileSync(tsconfigPath, JSON.stringify({
@@ -64,11 +76,28 @@ for(const lib of libsToBuild) {
             target: 'esnext',
             module: 'esnext',
             moduleResolution: 'node'
+        },
+        typedocOptions: {
+            entryPoints: [entrypointPath],
+            out: outDir
         }
     }));
-    // output docs to this directory
-    const outDir = join(docsOutputRoot, libSanitizedDir);
     
     // NOTE not catching errors.  If non-zero exit code, will continue to the next lib
-    await $`typedoc --tsconfig ${tsconfigPath} --entryPoints ${entrypointPath} --out ${outDir}`;
+    await $`typedoc --tsconfig ${tsconfigPath}`;
 }
+
+writeFileSync(join(docsOutputRoot, 'index.html'), `
+    <ul>
+    ${
+        indexEntries.map(({lib, dir}) => `
+            <li><a href="${dir}">${lib}</a></li>
+        `).join('')
+    }
+    </ul>
+`);
+writeFileSync(join(docsOutputRoot, '.nojekyll'), '');
+
+await $`git -C ${docsOutputRoot} add --all`;
+await $`git -C ${docsOutputRoot} commit -m "overwrite docs with new build (TODO stop overwriting everything!)"`;
+await $`git -C ${docsOutputRoot} push -f origin HEAD:gh-pages`;
