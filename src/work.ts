@@ -68,5 +68,7 @@ for(const lib of libsToBuild) {
     }));
     // output docs to this directory
     const outDir = join(docsOutputRoot, libSanitizedDir);
+    
+    // NOTE not catching errors.  If non-zero exit code, will continue to the next lib
     await $`typedoc --tsconfig ${tsconfigPath} --entryPoints ${entrypointPath} --out ${outDir}`;
 }
