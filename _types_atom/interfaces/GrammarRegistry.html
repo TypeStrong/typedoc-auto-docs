@@ -1,0 +1,919 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>GrammarRegistry | @types/atom</title>
+	<meta name="description" content="Documentation for @types/atom">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@types/atom</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">@types/atom</a>
+				</li>
+				<li>
+					<a href="GrammarRegistry.html">GrammarRegistry</a>
+				</li>
+			</ul>
+			<h1>Interface GrammarRegistry</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Registry containing one or more grammars.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">GrammarRegistry</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="GrammarRegistry.html#addGrammar" class="tsd-kind-icon">add<wbr>Grammar</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="GrammarRegistry.html#assignLanguageMode" class="tsd-kind-icon">assign<wbr>Language<wbr>Mode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="GrammarRegistry.html#autoAssignLanguageMode" class="tsd-kind-icon">auto<wbr>Assign<wbr>Language<wbr>Mode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="GrammarRegistry.html#decodeTokens" class="tsd-kind-icon">decode<wbr>Tokens</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="GrammarRegistry.html#getGrammarScore" class="tsd-kind-icon">get<wbr>Grammar<wbr>Score</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="GrammarRegistry.html#getGrammars" class="tsd-kind-icon">get<wbr>Grammars</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="GrammarRegistry.html#grammarForScopeName" class="tsd-kind-icon">grammar<wbr>For<wbr>Scope<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="GrammarRegistry.html#loadGrammar" class="tsd-kind-icon">load<wbr>Grammar</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="GrammarRegistry.html#loadGrammarSync" class="tsd-kind-icon">load<wbr>Grammar<wbr>Sync</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="GrammarRegistry.html#maintainLanguageMode" class="tsd-kind-icon">maintain<wbr>Language<wbr>Mode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="GrammarRegistry.html#onDidAddGrammar" class="tsd-kind-icon">on<wbr>Did<wbr>Add<wbr>Grammar</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="GrammarRegistry.html#onDidRemoveGrammar" class="tsd-kind-icon">on<wbr>Did<wbr>Remove<wbr>Grammar</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="GrammarRegistry.html#onDidUpdateGrammar" class="tsd-kind-icon">on<wbr>Did<wbr>Update<wbr>Grammar</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="GrammarRegistry.html#readGrammar" class="tsd-kind-icon">read<wbr>Grammar</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="GrammarRegistry.html#readGrammarSync" class="tsd-kind-icon">read<wbr>Grammar<wbr>Sync</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="GrammarRegistry.html#removeGrammar" class="tsd-kind-icon">remove<wbr>Grammar</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="GrammarRegistry.html#removeGrammarForScopeName" class="tsd-kind-icon">remove<wbr>Grammar<wbr>For<wbr>Scope<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="GrammarRegistry.html#selectGrammar" class="tsd-kind-icon">select<wbr>Grammar</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="addGrammar" class="tsd-anchor"></a>
+					<h3>add<wbr>Grammar</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Grammar<span class="tsd-signature-symbol">(</span>grammar<span class="tsd-signature-symbol">: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_atom/node_modules/@types/atom/src/grammar-registry.d.ts:50</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Add a grammar to this registry.
+									A &#39;grammar-added&#39; event is emitted after the grammar is added.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>grammar: <a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The Grammar to add. This should be a value previously returned
+										from ::readGrammar or ::readGrammarSync.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
+							<p>Returns a Disposable on which <code>.dispose()</code> can be called to remove
+							the grammar.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="assignLanguageMode" class="tsd-anchor"></a>
+					<h3>assign<wbr>Language<wbr>Mode</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">assign<wbr>Language<wbr>Mode<span class="tsd-signature-symbol">(</span>buffer<span class="tsd-signature-symbol">: </span><a href="../classes/TextBuffer.html" class="tsd-signature-type" data-tsd-kind="Class">TextBuffer</a>, languageId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_atom/node_modules/@types/atom/src/grammar-registry.d.ts:121</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Force a TextBuffer to use a different grammar than the one that would otherwise
+									be selected for it.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>buffer: <a href="../classes/TextBuffer.html" class="tsd-signature-type" data-tsd-kind="Class">TextBuffer</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The buffer whose grammar will be set.</p>
+									</div>
+								</li>
+								<li>
+									<h5>languageId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The identifier of the desired language.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Returns a boolean that indicates whether the language was successfully
+							found.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="autoAssignLanguageMode" class="tsd-anchor"></a>
+					<h3>auto<wbr>Assign<wbr>Language<wbr>Mode</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">auto<wbr>Assign<wbr>Language<wbr>Mode<span class="tsd-signature-symbol">(</span>buffer<span class="tsd-signature-symbol">: </span><a href="../classes/TextBuffer.html" class="tsd-signature-type" data-tsd-kind="Class">TextBuffer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_atom/node_modules/@types/atom/src/grammar-registry.d.ts:127</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Remove any language mode override that has been set for the given TextBuffer.
+									This will assign to the buffer the best language mode available.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>buffer: <a href="../classes/TextBuffer.html" class="tsd-signature-type" data-tsd-kind="Class">TextBuffer</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="decodeTokens" class="tsd-anchor"></a>
+					<h3>decode<wbr>Tokens</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>Tokens<span class="tsd-signature-symbol">(</span>lineText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, tags<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="GrammarToken.html" class="tsd-signature-type" data-tsd-kind="Interface">GrammarToken</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_atom/node_modules/@types/atom/src/grammar-registry.d.ts:101</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Convert compact tags representation into convenient, space-inefficient tokens.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>lineText: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The text of the tokenized line.</p>
+									</div>
+								</li>
+								<li>
+									<h5>tags: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The tags returned from a call to Grammar::tokenizeLine().</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="GrammarToken.html" class="tsd-signature-type" data-tsd-kind="Interface">GrammarToken</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>An array of Token instances decoded from the given tags.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="getGrammarScore" class="tsd-anchor"></a>
+					<h3>get<wbr>Grammar<wbr>Score</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Grammar<wbr>Score<span class="tsd-signature-symbol">(</span>grammar<span class="tsd-signature-symbol">: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a>, filePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, contents<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_atom/node_modules/@types/atom/src/grammar-registry.d.ts:146</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Returns a number representing how well the grammar matches the
+									<code>filePath</code> and <code>contents</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>grammar: <a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The grammar to score.</p>
+									</div>
+								</li>
+								<li>
+									<h5>filePath: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A string file path.</p>
+									</div>
+								</li>
+								<li>
+									<h5>contents: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A string of text for that file path.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="getGrammars" class="tsd-anchor"></a>
+					<h3>get<wbr>Grammars</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Grammars<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_atom/node_modules/@types/atom/src/grammar-registry.d.ts:33</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Get all the grammars in this registry.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>A non-empty array of Grammar instances.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="grammarForScopeName" class="tsd-anchor"></a>
+					<h3>grammar<wbr>For<wbr>Scope<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">grammar<wbr>For<wbr>Scope<wbr>Name<span class="tsd-signature-symbol">(</span>scopeName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_atom/node_modules/@types/atom/src/grammar-registry.d.ts:40</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Get a grammar with the given scope name.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>scopeName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A string such as <code>source.js</code>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a></h4>
+							<p>A Grammar or undefined.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="loadGrammar" class="tsd-anchor"></a>
+					<h3>load<wbr>Grammar</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Grammar<span class="tsd-signature-symbol">(</span>grammarPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span>, grammar<span class="tsd-signature-symbol">?: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_atom/node_modules/@types/atom/src/grammar-registry.d.ts:93</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Read a grammar asynchronously and add it to the registry.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>grammarPath: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The absolute file path to the grammar.</p>
+									</div>
+								</li>
+								<li>
+									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span>, grammar<span class="tsd-signature-symbol">?: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The function to be invoked once the Grammar has been read in
+										and added to the registry.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span>, grammar<span class="tsd-signature-symbol">?: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>error: <span class="tsd-signature-type">Error</span></h5>
+														</li>
+														<li>
+															<h5><span class="tsd-flag ts-flagOptional">Optional</span> grammar: <a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="loadGrammarSync" class="tsd-anchor"></a>
+					<h3>load<wbr>Grammar<wbr>Sync</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Grammar<wbr>Sync<span class="tsd-signature-symbol">(</span>grammarPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_atom/node_modules/@types/atom/src/grammar-registry.d.ts:85</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Read a grammar synchronously and add it to this registry.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>grammarPath: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The absolute file path to the grammar.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a></h4>
+							<p>The newly loaded Grammar.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="maintainLanguageMode" class="tsd-anchor"></a>
+					<h3>maintain<wbr>Language<wbr>Mode</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">maintain<wbr>Language<wbr>Mode<span class="tsd-signature-symbol">(</span>buffer<span class="tsd-signature-symbol">: </span><a href="../classes/TextBuffer.html" class="tsd-signature-type" data-tsd-kind="Class">TextBuffer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_atom/node_modules/@types/atom/src/grammar-registry.d.ts:111</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Set a TextBuffer&#39;s language mode based on its path and content, and continue
+										to update its language mode as grammars are added or updated, or the buffer&#39;s
+									file path changes.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>buffer: <a href="../classes/TextBuffer.html" class="tsd-signature-type" data-tsd-kind="Class">TextBuffer</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The buffer whose language mode will be maintained.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
+							<p>A Disposable that can be used to stop updating the buffer&#39;s
+							language mode.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="onDidAddGrammar" class="tsd-anchor"></a>
+					<h3>on<wbr>Did<wbr>Add<wbr>Grammar</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Add<wbr>Grammar<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>grammar<span class="tsd-signature-symbol">: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_atom/node_modules/@types/atom/src/grammar-registry.d.ts:11</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Invoke the given callback when a grammar is added to the registry.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <span class="tsd-signature-symbol">(</span>grammar<span class="tsd-signature-symbol">: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The callback to be invoked whenever a grammar is added.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>grammar<span class="tsd-signature-symbol">: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>grammar: <a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
+							<p>A Disposable on which <code>.dispose()</code> can be called to unsubscribe.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="onDidRemoveGrammar" class="tsd-anchor"></a>
+					<h3>on<wbr>Did<wbr>Remove<wbr>Grammar</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Remove<wbr>Grammar<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>grammar<span class="tsd-signature-symbol">: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_atom/node_modules/@types/atom/src/grammar-registry.d.ts:26</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Invoke the given callback when a grammar is removed from the registry.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <span class="tsd-signature-symbol">(</span>grammar<span class="tsd-signature-symbol">: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The callback to be invoked whenever a grammar is removed.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>grammar<span class="tsd-signature-symbol">: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>grammar: <a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
+							<p>A Disposable on which <code>.dispose()</code> can be called to unsubscribe.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="onDidUpdateGrammar" class="tsd-anchor"></a>
+					<h3>on<wbr>Did<wbr>Update<wbr>Grammar</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Update<wbr>Grammar<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>grammar<span class="tsd-signature-symbol">: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_atom/node_modules/@types/atom/src/grammar-registry.d.ts:19</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Invoke the given callback when a grammar is updated due to a grammar it
+									depends on being added or removed from the registry.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <span class="tsd-signature-symbol">(</span>grammar<span class="tsd-signature-symbol">: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The callback to be invoked whenever a grammar is updated.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>grammar<span class="tsd-signature-symbol">: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>grammar: <a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
+							<p>A Disposable on which <code>.dispose()</code> can be called to unsubscribe.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="readGrammar" class="tsd-anchor"></a>
+					<h3>read<wbr>Grammar</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Grammar<span class="tsd-signature-symbol">(</span>grammarPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span>, grammar<span class="tsd-signature-symbol">?: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_atom/node_modules/@types/atom/src/grammar-registry.d.ts:78</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Read a grammar asynchronously but don&#39;t add it to the registry.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>grammarPath: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The absolute file path to the grammar.</p>
+									</div>
+								</li>
+								<li>
+									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span>, grammar<span class="tsd-signature-symbol">?: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The function to be invoked once the Grammar has been read in.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span>, grammar<span class="tsd-signature-symbol">?: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>error: <span class="tsd-signature-type">Error</span></h5>
+														</li>
+														<li>
+															<h5><span class="tsd-flag ts-flagOptional">Optional</span> grammar: <a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="readGrammarSync" class="tsd-anchor"></a>
+					<h3>read<wbr>Grammar<wbr>Sync</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Grammar<wbr>Sync<span class="tsd-signature-symbol">(</span>grammarPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_atom/node_modules/@types/atom/src/grammar-registry.d.ts:71</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Read a grammar synchronously but don&#39;t add it to the registry.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>grammarPath: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The absolute file path to a grammar.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a></h4>
+							<p>The newly loaded Grammar.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="removeGrammar" class="tsd-anchor"></a>
+					<h3>remove<wbr>Grammar</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Grammar<span class="tsd-signature-symbol">(</span>grammar<span class="tsd-signature-symbol">: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_atom/node_modules/@types/atom/src/grammar-registry.d.ts:57</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Remove the given grammar from this registry.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>grammar: <a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The grammar to remove. This should be a grammar previously
+										added to the registry from ::addGrammar.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="removeGrammarForScopeName" class="tsd-anchor"></a>
+					<h3>remove<wbr>Grammar<wbr>For<wbr>Scope<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Grammar<wbr>For<wbr>Scope<wbr>Name<span class="tsd-signature-symbol">(</span>scopeName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_atom/node_modules/@types/atom/src/grammar-registry.d.ts:64</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Remove the grammar with the given scope name.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>scopeName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A string such as <code>source.js</code>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a></h4>
+							<p>Returns the removed Grammar or undefined.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="selectGrammar" class="tsd-anchor"></a>
+					<h3>select<wbr>Grammar</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">select<wbr>Grammar<span class="tsd-signature-symbol">(</span>filePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, fileContents<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_atom/node_modules/@types/atom/src/grammar-registry.d.ts:137</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Select a grammar for the given file path and file contents.</p>
+								</div>
+								<p> This picks the best match by checking the file path and contents against
+								each grammar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>filePath: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A string file path.</p>
+									</div>
+								</li>
+								<li>
+									<h5>fileContents: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A string of text for that file path.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Grammar.html" class="tsd-signature-type" data-tsd-kind="Interface">Grammar</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-is-external">
+						<a href="GrammarRegistry.html" class="tsd-kind-icon">Grammar<wbr>Registry</a>
+						<ul>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="GrammarRegistry.html#addGrammar" class="tsd-kind-icon">add<wbr>Grammar</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="GrammarRegistry.html#assignLanguageMode" class="tsd-kind-icon">assign<wbr>Language<wbr>Mode</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="GrammarRegistry.html#autoAssignLanguageMode" class="tsd-kind-icon">auto<wbr>Assign<wbr>Language<wbr>Mode</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="GrammarRegistry.html#decodeTokens" class="tsd-kind-icon">decode<wbr>Tokens</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="GrammarRegistry.html#getGrammarScore" class="tsd-kind-icon">get<wbr>Grammar<wbr>Score</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="GrammarRegistry.html#getGrammars" class="tsd-kind-icon">get<wbr>Grammars</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="GrammarRegistry.html#grammarForScopeName" class="tsd-kind-icon">grammar<wbr>For<wbr>Scope<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="GrammarRegistry.html#loadGrammar" class="tsd-kind-icon">load<wbr>Grammar</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="GrammarRegistry.html#loadGrammarSync" class="tsd-kind-icon">load<wbr>Grammar<wbr>Sync</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="GrammarRegistry.html#maintainLanguageMode" class="tsd-kind-icon">maintain<wbr>Language<wbr>Mode</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="GrammarRegistry.html#onDidAddGrammar" class="tsd-kind-icon">on<wbr>Did<wbr>Add<wbr>Grammar</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="GrammarRegistry.html#onDidRemoveGrammar" class="tsd-kind-icon">on<wbr>Did<wbr>Remove<wbr>Grammar</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="GrammarRegistry.html#onDidUpdateGrammar" class="tsd-kind-icon">on<wbr>Did<wbr>Update<wbr>Grammar</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="GrammarRegistry.html#readGrammar" class="tsd-kind-icon">read<wbr>Grammar</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="GrammarRegistry.html#readGrammarSync" class="tsd-kind-icon">read<wbr>Grammar<wbr>Sync</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="GrammarRegistry.html#removeGrammar" class="tsd-kind-icon">remove<wbr>Grammar</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="GrammarRegistry.html#removeGrammarForScopeName" class="tsd-kind-icon">remove<wbr>Grammar<wbr>For<wbr>Scope<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="GrammarRegistry.html#selectGrammar" class="tsd-kind-icon">select<wbr>Grammar</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

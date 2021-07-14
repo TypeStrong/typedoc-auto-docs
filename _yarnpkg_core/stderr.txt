@@ -1,0 +1,25 @@
+[91mError: [0m[96mnode_modules/@yarnpkg/core/lib/miscUtils.d.ts[0m:[93m2[0m:[93m23[0m - [91merror[0m[90m TS2688: [0mCannot find type definition file for 'jest'.
+
+[7m2[0m /// <reference types="jest" />
+[7m [0m [91m                      ~~~~[0m
+
+[91mError: [0m[96mnode_modules/@yarnpkg/core/lib/semverUtils.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"/d/Personal-dev/@TypeStrong/typedoc-auto-docs/tmpUZesca/_yarnpkg_core/node_modules/@types/semver/index"' has no default export.
+
+[7m1[0m import semver from 'semver';
+[7m [0m [91m       ~~~~~~[0m
+
+[91mError: [0m[96mnode_modules/@yarnpkg/core/lib/structUtils.d.ts[0m:[93m3[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"querystring"' has no default export.
+
+[7m3[0m import querystring from 'querystring';
+[7m [0m [91m       ~~~~~~~~~~~[0m
+
+[91mError: [0m[96mnode_modules/@yarnpkg/fslib/lib/NodeFS.d.ts[0m:[93m2[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"fs"' has no default export.
+
+[7m2[0m import fs, { BigIntStats, Stats } from 'fs';
+[7m [0m [91m       ~~[0m
+
+[91mError: [0m[96mnode_modules/@yarnpkg/fslib/lib/patchFs.d.ts[0m:[93m2[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"fs"' has no default export.
+
+[7m2[0m import fs from 'fs';
+[7m [0m [91m       ~~[0m
+

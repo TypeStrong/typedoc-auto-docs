@@ -1,0 +1,10 @@
+[91mError: [0m[96mnode_modules/@apollo/client/utilities/observables/Observable.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/d/Personal-dev/@TypeStrong/typedoc-auto-docs/tmpUZesca/_types_apollo-upload-client/node_modules/@types/zen-observable/index"' can only be default-imported using the 'allowSyntheticDefaultImports' flag
+
+[7m1[0m import Observable from 'zen-observable';
+[7m [0m [91m       ~~~~~~~~~~[0m
+
+  [96mnode_modules/@types/zen-observable/index.d.ts[0m:[93m70[0m:[93m1[0m
+    [7m70[0m export = Observable;
+    [7m  [0m [96m~~~~~~~~~~~~~~~~~~~~[0m
+    This module is declared with using 'export =', and can only be used with a default import when using the 'allowSyntheticDefaultImports' flag.
+

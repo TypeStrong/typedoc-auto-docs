@@ -1,0 +1,181 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@types/audio-play</title>
+	<meta name="description" content="Documentation for @types/audio-play">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@types/audio-play</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>@types/audio-play</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h1>Installation</h1>
+				</a>
+				<blockquote>
+					<p><code>npm install --save @types/audio-play</code></p>
+				</blockquote>
+				<a href="#summary" id="summary" style="color: inherit; text-decoration: none;">
+					<h1>Summary</h1>
+				</a>
+				<p>This package contains type definitions for audio-play (<a href="https://github.com/audiojs/audio-play">https://github.com/audiojs/audio-play</a>).</p>
+				<a href="#details" id="details" style="color: inherit; text-decoration: none;">
+					<h1>Details</h1>
+				</a>
+				<p>Files were exported from <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/audio-play">https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/audio-play</a>.</p>
+				<a href="#indexdts" id="indexdts" style="color: inherit; text-decoration: none;">
+					<h2><a href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/audio-play/index.d.ts">index.d.ts</a></h2>
+				</a>
+				<pre><code class="language-ts"><span style="color: #008000">// Type definitions for audio-play 2.2</span>
+<span style="color: #008000">// Project: https://github.com/audiojs/audio-play</span>
+<span style="color: #008000">// Definitions by: Jeff Peterson &lt;https://github.com/bdjeffyp&gt;</span>
+<span style="color: #008000">// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped</span>
+<span style="color: #008000">// TypeScript Version: 3.0</span>
+
+<span style="color: #008000">/**</span>
+<span style="color: #008000"> * Creates and plays/pauses a sound effect or music.</span>
+<span style="color: #008000"> * </span><span style="color: #0000FF">@param</span><span style="color: #008000"> </span><span style="color: #001080">buffer</span><span style="color: #008000"> Handle to the audio buffer created by an audio loader</span>
+<span style="color: #008000"> * </span><span style="color: #0000FF">@param</span><span style="color: #008000"> </span><span style="color: #001080">how</span><span style="color: #008000"> An options object that defines parameters for playback of the audio buffer</span>
+<span style="color: #008000"> * </span><span style="color: #0000FF">@param</span><span style="color: #008000"> </span><span style="color: #001080">cb</span><span style="color: #008000"> A callback that is executed when playback stops</span>
+<span style="color: #008000"> * </span><span style="color: #0000FF">@returns</span><span style="color: #008000"> a handle to the player, which can then call pause and play functions</span>
+<span style="color: #008000"> */</span>
+<span style="color: #0000FF">declare</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">audioPlay</span><span style="color: #000000">(</span><span style="color: #001080">buffer</span><span style="color: #000000">: </span><span style="color: #267F99">AudioBuffer</span><span style="color: #000000">, </span><span style="color: #001080">how</span><span style="color: #000000">: </span><span style="color: #267F99">audioPlay</span><span style="color: #000000">.</span><span style="color: #267F99">Options</span><span style="color: #000000">, </span><span style="color: #795E26">cb</span><span style="color: #000000">: () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #267F99">void</span><span style="color: #000000">): </span><span style="color: #267F99">audioPlay</span><span style="color: #000000">.</span><span style="color: #267F99">AudioPlayHandle</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">declare</span><span style="color: #000000"> </span><span style="color: #0000FF">namespace</span><span style="color: #000000"> </span><span style="color: #267F99">audioPlay</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">AudioPlayHandle</span><span style="color: #000000"> {</span>
+<span style="color: #000000">        </span><span style="color: #795E26">play</span><span style="color: #000000">: () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #267F99">any</span><span style="color: #000000">;</span>
+<span style="color: #000000">        </span><span style="color: #795E26">pause</span><span style="color: #000000">: () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #267F99">any</span><span style="color: #000000">;</span>
+<span style="color: #000000">    }</span>
+
+<span style="color: #000000">    </span><span style="color: #008000">/**</span>
+<span style="color: #008000">     * Various options for audio playback</span>
+<span style="color: #008000">     * </span><span style="color: #0000FF">@param</span><span style="color: #008000"> </span><span style="color: #001080">start</span><span style="color: #008000"> The timestamp at which to start the audio. Can be negative to start from end. (Default: 0)</span>
+<span style="color: #008000">     * </span><span style="color: #0000FF">@param</span><span style="color: #008000"> </span><span style="color: #001080">end</span><span style="color: #008000"> The timestamp the audio ends at. (Default: length of audio buffer)</span>
+<span style="color: #008000">     * </span><span style="color: #0000FF">@param</span><span style="color: #008000"> </span><span style="color: #001080">autoplay</span><span style="color: #008000"> Plays back the audio immediately upon loading. (Default: false)</span>
+<span style="color: #008000">     * </span><span style="color: #0000FF">@param</span><span style="color: #008000"> </span><span style="color: #001080">loop</span><span style="color: #008000"> Continuously loops the buffer until paused. (Default: false)</span>
+<span style="color: #008000">     * </span><span style="color: #0000FF">@param</span><span style="color: #008000"> </span><span style="color: #001080">context</span><span style="color: #008000"> Handle to an audio context. If not provided, one is provided for you.</span>
+<span style="color: #008000">     * </span><span style="color: #0000FF">@param</span><span style="color: #008000"> </span><span style="color: #001080">volume</span><span style="color: #008000"> (not implemented) Playback the audio at a percentage of full volume. (Default: 1)</span>
+<span style="color: #008000">     * </span><span style="color: #0000FF">@param</span><span style="color: #008000"> </span><span style="color: #001080">detune</span><span style="color: #008000"> (not implemented) Percentage of fine-tuning. (Default: 0)</span>
+<span style="color: #008000">     * </span><span style="color: #0000FF">@param</span><span style="color: #008000"> </span><span style="color: #001080">rate</span><span style="color: #008000"> (not implemented) Playback rate, in percent, of the audio. (Default: 1)</span>
+<span style="color: #008000">     */</span>
+<span style="color: #000000">    </span><span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">Options</span><span style="color: #000000"> {</span>
+<span style="color: #000000">        </span><span style="color: #001080">start</span><span style="color: #000000">?: </span><span style="color: #267F99">number</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">        </span><span style="color: #001080">end</span><span style="color: #000000">?: </span><span style="color: #267F99">number</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">        </span><span style="color: #001080">autoplay</span><span style="color: #000000">?: </span><span style="color: #267F99">boolean</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">        </span><span style="color: #001080">loop</span><span style="color: #000000">?: </span><span style="color: #267F99">boolean</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">        </span><span style="color: #001080">rate</span><span style="color: #000000">?: </span><span style="color: #267F99">number</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">        </span><span style="color: #001080">detune</span><span style="color: #000000">?: </span><span style="color: #267F99">number</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">        </span><span style="color: #001080">volume</span><span style="color: #000000">?: </span><span style="color: #267F99">number</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">        </span><span style="color: #001080">context</span><span style="color: #000000">?: </span><span style="color: #267F99">AudioContext</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">}</span>
+<span style="color: #AF00DB">export</span><span style="color: #000000"> = </span><span style="color: #001080">audioPlay</span><span style="color: #000000">;</span>
+
+</code></pre>
+				<a href="#additional-details" id="additional-details" style="color: inherit; text-decoration: none;">
+					<h3>Additional Details</h3>
+				</a>
+				<ul>
+					<li>Last updated: Wed, 07 Jul 2021 21:44:37 GMT</li>
+					<li>Dependencies: none</li>
+					<li>Global values: none</li>
+				</ul>
+				<a href="#credits" id="credits" style="color: inherit; text-decoration: none;">
+					<h1>Credits</h1>
+				</a>
+				<p>These definitions were written by <a href="https://github.com/bdjeffyp">Jeff Peterson</a>.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Externals</span>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-external">
+						<a href="modules/export_.html">export&#61;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="interfaces/AudioPlayHandle.html" class="tsd-kind-icon">Audio<wbr>Play<wbr>Handle</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="interfaces/Options.html" class="tsd-kind-icon">Options</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="modules.html#export_" class="tsd-kind-icon">export&#61;</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

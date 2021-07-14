@@ -1,0 +1,5 @@
+[91mError: [0m[96mnode_modules/@yarnpkg/esbuild-plugin-pnp/lib/index.d.ts[0m:[93m1[0m:[93m87[0m - [91merror[0m[90m TS2307: [0mCannot find module 'esbuild' or its corresponding type declarations.
+
+[7m1[0m import type { OnLoadArgs, OnLoadResult, OnResolveArgs, OnResolveResult, Plugin } from 'esbuild';
+[7m [0m [91m                                                                                      ~~~~~~~~~[0m
+

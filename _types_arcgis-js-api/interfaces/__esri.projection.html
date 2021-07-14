@@ -1,0 +1,370 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>projection | @types/arcgis-js-api</title>
+	<meta name="description" content="Documentation for @types/arcgis-js-api">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@types/arcgis-js-api</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">@types/arcgis-js-api</a>
+				</li>
+				<li>
+					<a href="../modules/__esri.html">__esri</a>
+				</li>
+				<li>
+					<a href="__esri.projection.html">projection</a>
+				</li>
+			</ul>
+			<h1>Interface projection</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A client-side projection engine for converting geometries from one <a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html">SpatialReference</a> to another.</p>
+					</div>
+					<p><a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html">Read more...</a></p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">projection</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="__esri.projection.html#getTransformation" class="tsd-kind-icon">get<wbr>Transformation</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="__esri.projection.html#getTransformations" class="tsd-kind-icon">get<wbr>Transformations</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="__esri.projection.html#isLoaded" class="tsd-kind-icon">is<wbr>Loaded</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="__esri.projection.html#isSupported" class="tsd-kind-icon">is<wbr>Supported</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="__esri.projection.html#load" class="tsd-kind-icon">load</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="__esri.projection.html#project" class="tsd-kind-icon">project</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="getTransformation" class="tsd-anchor"></a>
+					<h3>get<wbr>Transformation</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Transformation<span class="tsd-signature-symbol">(</span>inSpatialReference<span class="tsd-signature-symbol">: </span><a href="../modules/__esri.html#SpatialReference-1" class="tsd-signature-type" data-tsd-kind="Variable">SpatialReference</a><span class="tsd-signature-symbol"> | </span><a href="__esri.SpatialReferenceProperties.html" class="tsd-signature-type" data-tsd-kind="Interface">SpatialReferenceProperties</a>, outSpatialReference<span class="tsd-signature-symbol">: </span><a href="../modules/__esri.html#SpatialReference-1" class="tsd-signature-type" data-tsd-kind="Variable">SpatialReference</a><span class="tsd-signature-symbol"> | </span><a href="__esri.SpatialReferenceProperties.html" class="tsd-signature-type" data-tsd-kind="Interface">SpatialReferenceProperties</a>, extent<span class="tsd-signature-symbol">?: </span><a href="../modules/__esri.html#Extent-1" class="tsd-signature-type" data-tsd-kind="Variable">Extent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/__esri.html#GeographicTransformation-1" class="tsd-signature-type" data-tsd-kind="Variable">GeographicTransformation</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_arcgis-js-api/node_modules/@types/arcgis-js-api/index.d.ts:5103</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the default geographic transformation used to convert the geometry from the input spatial reference to the output spatial reference.</p>
+								</div>
+								<p><a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html#getTransformation">Read more...</a></p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>inSpatialReference: <a href="../modules/__esri.html#SpatialReference-1" class="tsd-signature-type" data-tsd-kind="Variable">SpatialReference</a><span class="tsd-signature-symbol"> | </span><a href="__esri.SpatialReferenceProperties.html" class="tsd-signature-type" data-tsd-kind="Interface">SpatialReferenceProperties</a></h5>
+								</li>
+								<li>
+									<h5>outSpatialReference: <a href="../modules/__esri.html#SpatialReference-1" class="tsd-signature-type" data-tsd-kind="Variable">SpatialReference</a><span class="tsd-signature-symbol"> | </span><a href="__esri.SpatialReferenceProperties.html" class="tsd-signature-type" data-tsd-kind="Interface">SpatialReferenceProperties</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> extent: <a href="../modules/__esri.html#Extent-1" class="tsd-signature-type" data-tsd-kind="Variable">Extent</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/__esri.html#GeographicTransformation-1" class="tsd-signature-type" data-tsd-kind="Variable">GeographicTransformation</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="getTransformations" class="tsd-anchor"></a>
+					<h3>get<wbr>Transformations</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Transformations<span class="tsd-signature-symbol">(</span>inSpatialReference<span class="tsd-signature-symbol">: </span><a href="../modules/__esri.html#SpatialReference-1" class="tsd-signature-type" data-tsd-kind="Variable">SpatialReference</a><span class="tsd-signature-symbol"> | </span><a href="__esri.SpatialReferenceProperties.html" class="tsd-signature-type" data-tsd-kind="Interface">SpatialReferenceProperties</a>, outSpatialReference<span class="tsd-signature-symbol">: </span><a href="../modules/__esri.html#SpatialReference-1" class="tsd-signature-type" data-tsd-kind="Variable">SpatialReference</a><span class="tsd-signature-symbol"> | </span><a href="__esri.SpatialReferenceProperties.html" class="tsd-signature-type" data-tsd-kind="Interface">SpatialReferenceProperties</a>, extent<span class="tsd-signature-symbol">?: </span><a href="../modules/__esri.html#Extent-1" class="tsd-signature-type" data-tsd-kind="Variable">Extent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/__esri.html#GeographicTransformation-1" class="tsd-signature-type" data-tsd-kind="Variable">GeographicTransformation</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_arcgis-js-api/node_modules/@types/arcgis-js-api/index.d.ts:5113</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a list of all geographic transformations suitable to convert geometries from the input spatial reference to the specified output spatial reference.</p>
+								</div>
+								<p><a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html#getTransformations">Read more...</a></p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>inSpatialReference: <a href="../modules/__esri.html#SpatialReference-1" class="tsd-signature-type" data-tsd-kind="Variable">SpatialReference</a><span class="tsd-signature-symbol"> | </span><a href="__esri.SpatialReferenceProperties.html" class="tsd-signature-type" data-tsd-kind="Interface">SpatialReferenceProperties</a></h5>
+								</li>
+								<li>
+									<h5>outSpatialReference: <a href="../modules/__esri.html#SpatialReference-1" class="tsd-signature-type" data-tsd-kind="Variable">SpatialReference</a><span class="tsd-signature-symbol"> | </span><a href="__esri.SpatialReferenceProperties.html" class="tsd-signature-type" data-tsd-kind="Interface">SpatialReferenceProperties</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> extent: <a href="../modules/__esri.html#Extent-1" class="tsd-signature-type" data-tsd-kind="Variable">Extent</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/__esri.html#GeographicTransformation-1" class="tsd-signature-type" data-tsd-kind="Variable">GeographicTransformation</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="isLoaded" class="tsd-anchor"></a>
+					<h3>is<wbr>Loaded</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Loaded<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_arcgis-js-api/node_modules/@types/arcgis-js-api/index.d.ts:5123</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Indicates if all dependencies of this module have been loaded.</p>
+								</div>
+								<p><a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html#isLoaded">Read more...</a></p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="isSupported" class="tsd-anchor"></a>
+					<h3>is<wbr>Supported</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Supported<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_arcgis-js-api/node_modules/@types/arcgis-js-api/index.d.ts:5129</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Indicates if this module is supported in the browser.</p>
+								</div>
+								<p><a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html#isSupported">Read more...</a></p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="load" class="tsd-anchor"></a>
+					<h3>load</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">load<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_arcgis-js-api/node_modules/@types/arcgis-js-api/index.d.ts:5135</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Loads this module&#39;s dependencies.</p>
+								</div>
+								<p><a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html#load">Read more...</a></p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a name="project" class="tsd-anchor"></a>
+					<h3>project</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">project<span class="tsd-signature-symbol">(</span>geometry<span class="tsd-signature-symbol">: </span><a href="../modules/__esri.html#Geometry-1" class="tsd-signature-type" data-tsd-kind="Variable">Geometry</a><span class="tsd-signature-symbol"> | </span><a href="../modules/__esri.html#Geometry-1" class="tsd-signature-type" data-tsd-kind="Variable">Geometry</a><span class="tsd-signature-symbol">[]</span>, outSpatialReference<span class="tsd-signature-symbol">: </span><a href="../modules/__esri.html#SpatialReference-1" class="tsd-signature-type" data-tsd-kind="Variable">SpatialReference</a><span class="tsd-signature-symbol"> | </span><a href="__esri.SpatialReferenceProperties.html" class="tsd-signature-type" data-tsd-kind="Interface">SpatialReferenceProperties</a>, geographicTransformation<span class="tsd-signature-symbol">?: </span><a href="../modules/__esri.html#GeographicTransformation-1" class="tsd-signature-type" data-tsd-kind="Variable">GeographicTransformation</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/__esri.html#Geometry-1" class="tsd-signature-type" data-tsd-kind="Variable">Geometry</a><span class="tsd-signature-symbol"> | </span><a href="../modules/__esri.html#Geometry-1" class="tsd-signature-type" data-tsd-kind="Variable">Geometry</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in tmpUZesca/_types_arcgis-js-api/node_modules/@types/arcgis-js-api/index.d.ts:5141</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Projects a geometry or an array of geometries to the specified output spatial reference.</p>
+								</div>
+								<p><a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html#project">Read more...</a></p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>geometry: <a href="../modules/__esri.html#Geometry-1" class="tsd-signature-type" data-tsd-kind="Variable">Geometry</a><span class="tsd-signature-symbol"> | </span><a href="../modules/__esri.html#Geometry-1" class="tsd-signature-type" data-tsd-kind="Variable">Geometry</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>outSpatialReference: <a href="../modules/__esri.html#SpatialReference-1" class="tsd-signature-type" data-tsd-kind="Variable">SpatialReference</a><span class="tsd-signature-symbol"> | </span><a href="__esri.SpatialReferenceProperties.html" class="tsd-signature-type" data-tsd-kind="Interface">SpatialReferenceProperties</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> geographicTransformation: <a href="../modules/__esri.html#GeographicTransformation-1" class="tsd-signature-type" data-tsd-kind="Variable">GeographicTransformation</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/__esri.html#Geometry-1" class="tsd-signature-type" data-tsd-kind="Variable">Geometry</a><span class="tsd-signature-symbol"> | </span><a href="../modules/__esri.html#Geometry-1" class="tsd-signature-type" data-tsd-kind="Variable">Geometry</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+					<li class="current tsd-kind-namespace tsd-is-external">
+						<a href="../modules/__esri.html">__esri</a>
+						<ul>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="../modules/__esri.CIM.html">CIM</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="../modules/__esri.content.html">content</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="../modules/__esri.geometry.html">geometry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="../modules/__esri.pointCloudRenderers.html">point<wbr>Cloud<wbr>Renderers</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="../modules/__esri.rasterRenderers.html">raster<wbr>Renderers</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="../modules/__esri.renderers.html">renderers</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="../modules/__esri.symbols.html">symbols</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="../modules/__esri.units.html">units</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="../modules/__esri.widget.html">widget</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-namespace tsd-is-external">
+						<a href="__esri.projection.html" class="tsd-kind-icon">projection</a>
+						<ul>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="__esri.projection.html#getTransformation" class="tsd-kind-icon">get<wbr>Transformation</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="__esri.projection.html#getTransformations" class="tsd-kind-icon">get<wbr>Transformations</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="__esri.projection.html#isLoaded" class="tsd-kind-icon">is<wbr>Loaded</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="__esri.projection.html#isSupported" class="tsd-kind-icon">is<wbr>Supported</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="__esri.projection.html#load" class="tsd-kind-icon">load</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+								<a href="__esri.projection.html#project" class="tsd-kind-icon">project</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

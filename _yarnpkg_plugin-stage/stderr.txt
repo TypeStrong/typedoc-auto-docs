@@ -1,0 +1,15 @@
+[91mError: [0m[96mnode_modules/@yarnpkg/fslib/lib/NodeFS.d.ts[0m:[93m2[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"fs"' has no default export.
+
+[7m2[0m import fs, { BigIntStats, Stats } from 'fs';
+[7m [0m [91m       ~~[0m
+
+[91mError: [0m[96mnode_modules/@yarnpkg/fslib/lib/patchFs.d.ts[0m:[93m2[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"fs"' has no default export.
+
+[7m2[0m import fs from 'fs';
+[7m [0m [91m       ~~[0m
+
+[91mError: [0m[96mnode_modules/@yarnpkg/plugin-stage/lib/index.d.ts[0m:[93m1[0m:[93m33[0m - [91merror[0m[90m TS2307: [0mCannot find module '@yarnpkg/core' or its corresponding type declarations.
+
+[7m1[0m import { Plugin, Project } from '@yarnpkg/core';
+[7m [0m [91m                                ~~~~~~~~~~~~~~~[0m
+

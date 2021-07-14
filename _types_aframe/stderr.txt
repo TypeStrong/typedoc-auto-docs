@@ -1,0 +1,55 @@
+[91mError: [0m[96mnode_modules/@types/aframe/index.d.ts[0m:[93m80[0m:[93m52[0m - [91merror[0m[90m TS2503: [0mCannot find namespace 'THREE'.
+
+[7m80[0m     tock?(time: number, timeDelta: number, camera: THREE.Camera): void;
+[7m  [0m [91m                                                   ~~~~~[0m
+
+[91mError: [0m[96mnode_modules/@types/aframe/index.d.ts[0m:[93m127[0m:[93m15[0m - [91merror[0m[90m TS2503: [0mCannot find namespace 'THREE'.
+
+[7m127[0m     object3D: THREE.Object3D;
+[7m   [0m [91m              ~~~~~[0m
+
+[91mError: [0m[96mnode_modules/@types/aframe/index.d.ts[0m:[93m128[0m:[93m28[0m - [91merror[0m[90m TS2503: [0mCannot find namespace 'THREE'.
+
+[7m128[0m     object3DMap: ObjectMap<THREE.Object3D>;
+[7m   [0m [91m                           ~~~~~[0m
+
+[91mError: [0m[96mnode_modules/@types/aframe/index.d.ts[0m:[93m139[0m:[93m32[0m - [91merror[0m[90m TS2503: [0mCannot find namespace 'THREE'.
+
+[7m139[0m     getObject3D(type: string): THREE.Object3D;
+[7m   [0m [91m                               ~~~~~[0m
+
+[91mError: [0m[96mnode_modules/@types/aframe/index.d.ts[0m:[93m140[0m:[93m56[0m - [91merror[0m[90m TS2503: [0mCannot find namespace 'THREE'.
+
+[7m140[0m     getOrCreateObject3D(type: string, construct: any): THREE.Object3D;
+[7m   [0m [91m                                                       ~~~~~[0m
+
+[91mError: [0m[96mnode_modules/@types/aframe/index.d.ts[0m:[93m144[0m:[93m36[0m - [91merror[0m[90m TS2503: [0mCannot find namespace 'THREE'.
+
+[7m144[0m     setObject3D(type: string, obj: THREE.Object3D): void;
+[7m   [0m [91m                                   ~~~~~[0m
+
+[91mError: [0m[96mnode_modules/@types/aframe/index.d.ts[0m:[93m245[0m:[93m13[0m - [91merror[0m[90m TS2503: [0mCannot find namespace 'THREE'.
+
+[7m245[0m     camera: THREE.Camera;
+[7m   [0m [91m            ~~~~~[0m
+
+[91mError: [0m[96mnode_modules/@types/aframe/index.d.ts[0m:[93m248[0m:[93m15[0m - [91merror[0m[90m TS2503: [0mCannot find namespace 'THREE'.
+
+[7m248[0m     object3D: THREE.Scene;
+[7m   [0m [91m              ~~~~~[0m
+
+[91mError: [0m[96mnode_modules/@types/aframe/index.d.ts[0m:[93m249[0m:[93m15[0m - [91merror[0m[90m TS2503: [0mCannot find namespace 'THREE'.
+
+[7m249[0m     renderer: THREE.WebGLRenderer;
+[7m   [0m [91m              ~~~~~[0m
+
+[91mError: [0m[96mnode_modules/@types/aframe/index.d.ts[0m:[93m278[0m:[93m15[0m - [91merror[0m[90m TS2503: [0mCannot find namespace 'THREE'.
+
+[7m278[0m     material: THREE.Material;
+[7m   [0m [91m              ~~~~~[0m
+
+[91mError: [0m[96mnode_modules/@types/aframe/index.d.ts[0m:[93m345[0m:[93m36[0m - [91merror[0m[90m TS2503: [0mCannot find namespace 'THREE'.
+
+[7m345[0m         PolyfillControls(object3D: THREE.Object3D): void;
+[7m   [0m [91m                                   ~~~~~[0m
+

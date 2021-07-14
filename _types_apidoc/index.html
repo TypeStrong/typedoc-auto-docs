@@ -1,0 +1,193 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@types/apidoc</title>
+	<meta name="description" content="Documentation for @types/apidoc">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@types/apidoc</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>@types/apidoc</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h1>Installation</h1>
+				</a>
+				<blockquote>
+					<p><code>npm install --save @types/apidoc</code></p>
+				</blockquote>
+				<a href="#summary" id="summary" style="color: inherit; text-decoration: none;">
+					<h1>Summary</h1>
+				</a>
+				<p>This package contains type definitions for apidoc (<a href="https://github.com/apidoc/apidoc">https://github.com/apidoc/apidoc</a>).</p>
+				<a href="#details" id="details" style="color: inherit; text-decoration: none;">
+					<h1>Details</h1>
+				</a>
+				<p>Files were exported from <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/apidoc">https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/apidoc</a>.</p>
+				<a href="#indexdts" id="indexdts" style="color: inherit; text-decoration: none;">
+					<h2><a href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/apidoc/index.d.ts">index.d.ts</a></h2>
+				</a>
+				<pre><code class="language-ts"><span style="color: #008000">// Type definitions for apidoc 0.22</span>
+<span style="color: #008000">// Project: https://github.com/apidoc/apidoc</span>
+<span style="color: #008000">// Definitions by: rigwild &lt;https://github.com/rigwild&gt;</span>
+<span style="color: #008000">//                 hoonga &lt;https://github.com/hoonga&gt;</span>
+<span style="color: #008000">// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped</span>
+
+<span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">ParsedFile</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">filename</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">extension</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">src</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">blocks</span><span style="color: #000000">: </span><span style="color: #267F99">Array</span><span style="color: #000000">&lt;{ </span><span style="color: #001080">global</span><span style="color: #000000">: </span><span style="color: #267F99">any</span><span style="color: #000000">; </span><span style="color: #001080">local</span><span style="color: #000000">: </span><span style="color: #267F99">any</span><span style="color: #000000">; }&gt;;</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">DocOptions</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">excludeFilters</span><span style="color: #000000">?: </span><span style="color: #267F99">string</span><span style="color: #000000">[] | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">includeFilters</span><span style="color: #000000">?: </span><span style="color: #267F99">string</span><span style="color: #000000">[] | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">src</span><span style="color: #000000">?: </span><span style="color: #267F99">string</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">dest</span><span style="color: #000000">?: </span><span style="color: #267F99">string</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">template</span><span style="color: #000000">?: </span><span style="color: #267F99">string</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">templateSingleFile</span><span style="color: #000000">?: </span><span style="color: #267F99">string</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">config</span><span style="color: #000000">?: </span><span style="color: #267F99">string</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">apiprivate</span><span style="color: #000000">?: </span><span style="color: #267F99">boolean</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">verbose</span><span style="color: #000000">?: </span><span style="color: #267F99">boolean</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">single</span><span style="color: #000000">?: </span><span style="color: #267F99">boolean</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">debug</span><span style="color: #000000">?: </span><span style="color: #267F99">boolean</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">parse</span><span style="color: #000000">?: </span><span style="color: #267F99">boolean</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">colorize</span><span style="color: #000000">?: </span><span style="color: #267F99">boolean</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">filters</span><span style="color: #000000">?: </span><span style="color: #267F99">Record</span><span style="color: #000000">&lt;</span><span style="color: #267F99">string</span><span style="color: #000000">, </span><span style="color: #267F99">string</span><span style="color: #000000">&gt; | {</span>
+<span style="color: #000000">        [</span><span style="color: #001080">keys</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">]: {</span>
+<span style="color: #000000">            </span><span style="color: #795E26">postFilter</span><span style="color: #000000">: (</span><span style="color: #001080">parsedFiles</span><span style="color: #000000">: </span><span style="color: #267F99">ParsedFile</span><span style="color: #000000">[], </span><span style="color: #001080">parsedFilenames</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">[]) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #267F99">void</span>
+<span style="color: #000000">        }</span>
+<span style="color: #000000">    } | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">languages</span><span style="color: #000000">?: </span><span style="color: #267F99">Record</span><span style="color: #000000">&lt;</span><span style="color: #267F99">string</span><span style="color: #000000">, </span><span style="color: #267F99">string</span><span style="color: #000000">&gt; | {</span>
+<span style="color: #000000">        [</span><span style="color: #001080">language</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">]: {</span>
+<span style="color: #000000">            </span><span style="color: #001080">docBlocksRegExp</span><span style="color: #000000">: </span><span style="color: #267F99">RegExp</span><span style="color: #000000">;</span>
+<span style="color: #000000">            </span><span style="color: #001080">inlineRegExp</span><span style="color: #000000">: </span><span style="color: #267F99">RegExp</span><span style="color: #000000">;</span>
+<span style="color: #000000">        }</span>
+<span style="color: #000000">    } | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">parsers</span><span style="color: #000000">?: </span><span style="color: #267F99">Record</span><span style="color: #000000">&lt;</span><span style="color: #267F99">string</span><span style="color: #000000">, </span><span style="color: #267F99">string</span><span style="color: #000000">&gt; | {</span>
+<span style="color: #000000">        </span><span style="color: #795E26">parse</span><span style="color: #000000">: (</span><span style="color: #001080">content</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">, </span><span style="color: #001080">source</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">, </span><span style="color: #001080">messages</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">            </span><span style="color: #001080">name</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">;</span>
+<span style="color: #000000">            </span><span style="color: #001080">title</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">;</span>
+<span style="color: #000000">            </span><span style="color: #001080">description</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">;</span>
+<span style="color: #000000">        };</span>
+<span style="color: #000000">        </span><span style="color: #001080">path</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">;</span>
+<span style="color: #000000">        </span><span style="color: #001080">getGroup</span><span style="color: #000000">?: (() </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #267F99">string</span><span style="color: #000000">) | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">        </span><span style="color: #001080">markdownFields</span><span style="color: #000000">?: </span><span style="color: #267F99">string</span><span style="color: #000000">[] | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">        </span><span style="color: #001080">markdownRemovePTags</span><span style="color: #000000">?: </span><span style="color: #267F99">string</span><span style="color: #000000">[] | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    } | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">workers</span><span style="color: #000000">?: </span><span style="color: #267F99">Record</span><span style="color: #000000">&lt;</span><span style="color: #267F99">string</span><span style="color: #000000">, </span><span style="color: #267F99">string</span><span style="color: #000000">&gt; | {</span>
+<span style="color: #000000">        [</span><span style="color: #001080">keys</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">]: </span><span style="color: #267F99">any</span><span style="color: #000000">;</span>
+<span style="color: #000000">    } | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">silent</span><span style="color: #000000">?: </span><span style="color: #267F99">boolean</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">simulate</span><span style="color: #000000">?: </span><span style="color: #267F99">boolean</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">markdown</span><span style="color: #000000">?: </span><span style="color: #267F99">boolean</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">lineEnding</span><span style="color: #000000">?: </span><span style="color: #267F99">string</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">encoding</span><span style="color: #000000">?: </span><span style="color: #267F99">string</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">copyDefinitions</span><span style="color: #000000">?: </span><span style="color: #267F99">boolean</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #001080">filterBy</span><span style="color: #000000">?: </span><span style="color: #267F99">string</span><span style="color: #000000"> | </span><span style="color: #267F99">string</span><span style="color: #000000">[] | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">createDoc</span><span style="color: #000000">(</span><span style="color: #001080">options</span><span style="color: #000000">: </span><span style="color: #267F99">DocOptions</span><span style="color: #000000">): </span><span style="color: #267F99">boolean</span><span style="color: #000000"> | { </span><span style="color: #001080">data</span><span style="color: #000000">: </span><span style="color: #267F99">Record</span><span style="color: #000000">&lt;</span><span style="color: #267F99">string</span><span style="color: #000000">, </span><span style="color: #267F99">any</span><span style="color: #000000">&gt;; </span><span style="color: #001080">project</span><span style="color: #000000">: </span><span style="color: #267F99">Record</span><span style="color: #000000">&lt;</span><span style="color: #267F99">string</span><span style="color: #000000">, </span><span style="color: #267F99">any</span><span style="color: #000000">&gt; };</span>
+
+</code></pre>
+				<a href="#additional-details" id="additional-details" style="color: inherit; text-decoration: none;">
+					<h3>Additional Details</h3>
+				</a>
+				<ul>
+					<li>Last updated: Wed, 07 Jul 2021 21:44:26 GMT</li>
+					<li>Dependencies: none</li>
+					<li>Global values: none</li>
+				</ul>
+				<a href="#credits" id="credits" style="color: inherit; text-decoration: none;">
+					<h1>Credits</h1>
+				</a>
+				<p>These definitions were written by <a href="https://github.com/rigwild">rigwild</a>, and <a href="https://github.com/hoonga">hoonga</a>.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="interfaces/DocOptions.html" class="tsd-kind-icon">Doc<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="interfaces/ParsedFile.html" class="tsd-kind-icon">Parsed<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="modules.html#createDoc" class="tsd-kind-icon">create<wbr>Doc</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

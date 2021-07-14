@@ -1,0 +1,1367 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Contact | @types/amazon-connect-streams</title>
+	<meta name="description" content="Documentation for @types/amazon-connect-streams">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@types/amazon-connect-streams</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">@types/amazon-connect-streams</a>
+				</li>
+				<li>
+					<a href="../modules/connect.html">connect</a>
+				</li>
+				<li>
+					<a href="connect.Contact.html">Contact</a>
+				</li>
+			</ul>
+			<h1>Class Contact</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The Contact API provides event subscription methods and action methods which can be called on behalf of a specific contact.
+							Contacts come and go and so should these API objects.
+							It is good practice not to persist these objects or keep them as internal state.
+						If you need to, store the <code>contactId</code> of the contact and make sure that the contact still exists by fetching it from the <code>Agent</code> API object before calling methods on it.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Contact</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#contactId" class="tsd-kind-icon">contact<wbr>Id</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#accept" class="tsd-kind-icon">accept</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#addConnection" class="tsd-kind-icon">add<wbr>Connection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#complete" class="tsd-kind-icon">complete</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#conferenceConnections" class="tsd-kind-icon">conference<wbr>Connections</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#destroy" class="tsd-kind-icon">destroy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#getActiveInitialConnection" class="tsd-kind-icon">get<wbr>Active<wbr>Initial<wbr>Connection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#getAgentConnection" class="tsd-kind-icon">get<wbr>Agent<wbr>Connection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#getAttributes" class="tsd-kind-icon">get<wbr>Attributes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#getConnections" class="tsd-kind-icon">get<wbr>Connections</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#getContactId" class="tsd-kind-icon">get<wbr>Contact<wbr>Id</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#getEventName" class="tsd-kind-icon">get<wbr>Event<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#getInitialConnection" class="tsd-kind-icon">get<wbr>Initial<wbr>Connection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#getInitialContactId" class="tsd-kind-icon">get<wbr>Initial<wbr>Contact<wbr>Id</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#getOriginalContactId" class="tsd-kind-icon">get<wbr>Original<wbr>Contact<wbr>Id</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#getQueue" class="tsd-kind-icon">get<wbr>Queue</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#getQueueTimestamp" class="tsd-kind-icon">get<wbr>Queue<wbr>Timestamp</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#getSingleActiveThirdPartyConnection" class="tsd-kind-icon">get<wbr>Single<wbr>Active<wbr>Third<wbr>Party<wbr>Connection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#getStatus" class="tsd-kind-icon">get<wbr>Status</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#getStatusDuration" class="tsd-kind-icon">get<wbr>Status<wbr>Duration</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#getThirdPartyConnections" class="tsd-kind-icon">get<wbr>Third<wbr>Party<wbr>Connections</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#getType" class="tsd-kind-icon">get<wbr>Type</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#isConnected" class="tsd-kind-icon">is<wbr>Connected</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#isInbound" class="tsd-kind-icon">is<wbr>Inbound</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#isSoftphoneCall" class="tsd-kind-icon">is<wbr>Softphone<wbr>Call</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#notifyIssue" class="tsd-kind-icon">notify<wbr>Issue</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#onACW" class="tsd-kind-icon">onACW</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#onAccepted" class="tsd-kind-icon">on<wbr>Accepted</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#onConnected" class="tsd-kind-icon">on<wbr>Connected</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#onConnecting" class="tsd-kind-icon">on<wbr>Connecting</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#onDestroy" class="tsd-kind-icon">on<wbr>Destroy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#onEnded" class="tsd-kind-icon">on<wbr>Ended</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#onIncoming" class="tsd-kind-icon">on<wbr>Incoming</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#onMissed" class="tsd-kind-icon">on<wbr>Missed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#onPending" class="tsd-kind-icon">on<wbr>Pending</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#onRefresh" class="tsd-kind-icon">on<wbr>Refresh</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#toSnapshot" class="tsd-kind-icon">to<wbr>Snapshot</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="connect.Contact.html#toggleActiveConnections" class="tsd-kind-icon">toggle<wbr>Active<wbr>Connections</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Contact<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="connect.Contact.html" class="tsd-signature-type" data-tsd-kind="Class">Contact</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="connect.Contact.html" class="tsd-signature-type" data-tsd-kind="Class">Contact</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="contactId" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> contact<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">contact<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.d.ts:729</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The unique contactId of this contact.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="accept" class="tsd-anchor"></a>
+					<h3>accept</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">accept<span class="tsd-signature-symbol">(</span>callbacks<span class="tsd-signature-symbol">?: </span><a href="../interfaces/connect.SuccessFailOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SuccessFailOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:896</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Accept an incoming contact.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callbacks: <a href="../interfaces/connect.SuccessFailOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SuccessFailOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Success and failure callbacks to determine whether the operation was successful.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="addConnection" class="tsd-anchor"></a>
+					<h3>add<wbr>Connection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Connection<span class="tsd-signature-symbol">(</span>endpoint<span class="tsd-signature-symbol">: </span><a href="connect.Endpoint.html" class="tsd-signature-type" data-tsd-kind="Class">Endpoint</a>, callbacks<span class="tsd-signature-symbol">?: </span><a href="../interfaces/connect.SuccessFailOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SuccessFailOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:935</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add a new outbound third-party connection to this contact and connect it to the specified endpoint.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>endpoint: <a href="connect.Endpoint.html" class="tsd-signature-type" data-tsd-kind="Class">Endpoint</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The endpoint to add.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callbacks: <a href="../interfaces/connect.SuccessFailOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SuccessFailOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Success and failure callbacks to determine whether the operation was successful.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="complete" class="tsd-anchor"></a>
+					<h3>complete</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">complete<span class="tsd-signature-symbol">(</span>callbacks<span class="tsd-signature-symbol">?: </span><a href="../interfaces/connect.SuccessFailOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SuccessFailOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:913</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This is an API that completes this contact entirely.
+									That means that this should only be used for non-monitoring agent connections.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callbacks: <a href="../interfaces/connect.SuccessFailOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SuccessFailOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Success and failure callbacks to determine whether the operation was successful.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="conferenceConnections" class="tsd-anchor"></a>
+					<h3>conference<wbr>Connections</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">conference<wbr>Connections<span class="tsd-signature-symbol">(</span>callbacks<span class="tsd-signature-symbol">?: </span><a href="../interfaces/connect.SuccessFailOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SuccessFailOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:951</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Conference together the active connections of the conversation.
+									This operation is only valid if there is at least one third-party connection and the initial connection is still connected.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callbacks: <a href="../interfaces/connect.SuccessFailOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SuccessFailOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Success and failure callbacks to determine whether the operation was successful.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="destroy" class="tsd-anchor"></a>
+					<h3>destroy</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">destroy<span class="tsd-signature-symbol">(</span>callbacks<span class="tsd-signature-symbol">?: </span><a href="../interfaces/connect.SuccessFailOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SuccessFailOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:905</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Close the contact and all of its associated connections.
+										If the contact is a voice contact, and there is a third-party, the customer remains bridged with the third party and will not be disconnected from the call.
+									Otherwise, the agent and customer are disconnected.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callbacks: <a href="../interfaces/connect.SuccessFailOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SuccessFailOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Success and failure callbacks to determine whether the operation was successful.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getActiveInitialConnection" class="tsd-anchor"></a>
+					<h3>get<wbr>Active<wbr>Initial<wbr>Connection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Active<wbr>Initial<wbr>Connection<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="connect.BaseConnection.html" class="tsd-signature-type" data-tsd-kind="Class">BaseConnection</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:858</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the inital connection of the contact, or null if the initial connection is no longer active.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="connect.BaseConnection.html" class="tsd-signature-type" data-tsd-kind="Class">BaseConnection</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getAgentConnection" class="tsd-anchor"></a>
+					<h3>get<wbr>Agent<wbr>Connection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Agent<wbr>Connection<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="connect.BaseConnection.html" class="tsd-signature-type" data-tsd-kind="Class">BaseConnection</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:873</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the agent connection.
+									This is the connection that represents the agent&#39;s participation in the contact.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="connect.BaseConnection.html" class="tsd-signature-type" data-tsd-kind="Class">BaseConnection</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getAttributes" class="tsd-anchor"></a>
+					<h3>get<wbr>Attributes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Attributes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/connect.AttributeDictionary.html" class="tsd-signature-type" data-tsd-kind="Interface">AttributeDictionary</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:876</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a map of the attributes associated with the contact.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/connect.AttributeDictionary.html" class="tsd-signature-type" data-tsd-kind="Interface">AttributeDictionary</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getConnections" class="tsd-anchor"></a>
+					<h3>get<wbr>Connections</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Connections<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="connect.BaseConnection.html" class="tsd-signature-type" data-tsd-kind="Class">BaseConnection</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:852</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a list containing <code>Connection</code> API objects for each connection in the contact.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="connect.BaseConnection.html" class="tsd-signature-type" data-tsd-kind="Class">BaseConnection</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getContactId" class="tsd-anchor"></a>
+					<h3>get<wbr>Contact<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Contact<wbr>Id<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:818</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the unique contactId of this contact.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getEventName" class="tsd-anchor"></a>
+					<h3>get<wbr>Event<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Event<wbr>Name<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../enums/connect.ContactEvents.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ContactEvents</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:815</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a formatted string with the contact event and ID.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <a href="../enums/connect.ContactEvents.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ContactEvents</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The event to format.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getInitialConnection" class="tsd-anchor"></a>
+					<h3>get<wbr>Initial<wbr>Connection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Initial<wbr>Connection<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="connect.BaseConnection.html" class="tsd-signature-type" data-tsd-kind="Class">BaseConnection</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:855</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the initial connection of the contact.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="connect.BaseConnection.html" class="tsd-signature-type" data-tsd-kind="Class">BaseConnection</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getInitialContactId" class="tsd-anchor"></a>
+					<h3>get<wbr>Initial<wbr>Contact<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Initial<wbr>Contact<wbr>Id<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:828</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Alias for <code>getOriginalContactId()</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getOriginalContactId" class="tsd-anchor"></a>
+					<h3>get<wbr>Original<wbr>Contact<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Original<wbr>Contact<wbr>Id<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:825</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the original (initial) contact id from which this contact was transferred, or none if this is not an internal Connect transfer.
+										This is typically a contact owned by another agent, thus this agent will not be able to manipulate it.
+									It is for reference and association purposes only, and can be used to share data between transferred contacts externally if it is linked by originalContactId.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getQueue" class="tsd-anchor"></a>
+					<h3>get<wbr>Queue</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Queue<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/connect.Queue.html" class="tsd-signature-type" data-tsd-kind="Interface">Queue</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:846</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the queue associated with the contact.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/connect.Queue.html" class="tsd-signature-type" data-tsd-kind="Interface">Queue</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getQueueTimestamp" class="tsd-anchor"></a>
+					<h3>get<wbr>Queue<wbr>Timestamp</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Queue<wbr>Timestamp<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:849</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the timestamp associated with when the contact was placed in the queue.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getSingleActiveThirdPartyConnection" class="tsd-anchor"></a>
+					<h3>get<wbr>Single<wbr>Active<wbr>Third<wbr>Party<wbr>Connection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Single<wbr>Active<wbr>Third<wbr>Party<wbr>Connection<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="connect.BaseConnection.html" class="tsd-signature-type" data-tsd-kind="Class">BaseConnection</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:867</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>In Voice contacts, there can only be one active third-party connection.
+									This method returns the single active third-party connection, or null if there are no currently active third-party connections.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="connect.BaseConnection.html" class="tsd-signature-type" data-tsd-kind="Class">BaseConnection</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getStatus" class="tsd-anchor"></a>
+					<h3>get<wbr>Status</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Status<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/connect.ContactState.html" class="tsd-signature-type" data-tsd-kind="Interface">ContactState</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:837</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a ContactState object representing the state of the contact.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/connect.ContactState.html" class="tsd-signature-type" data-tsd-kind="Interface">ContactState</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getStatusDuration" class="tsd-anchor"></a>
+					<h3>get<wbr>Status<wbr>Duration</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Status<wbr>Duration<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:843</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the duration of the contact state in milliseconds relative to local time.
+									This takes into account time skew between the JS client and the Amazon Connect backend servers.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getThirdPartyConnections" class="tsd-anchor"></a>
+					<h3>get<wbr>Third<wbr>Party<wbr>Connections</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Third<wbr>Party<wbr>Connections<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="connect.BaseConnection.html" class="tsd-signature-type" data-tsd-kind="Class">BaseConnection</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:861</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a list of all of the third-party connections, i.e. the list of all connections except for the initial connection, or an empty list if there are no third-party connections.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="connect.BaseConnection.html" class="tsd-signature-type" data-tsd-kind="Class">BaseConnection</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="getType" class="tsd-anchor"></a>
+					<h3>get<wbr>Type</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/connect.ContactType.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ContactType</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:834</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the type of the contact.
+									This indicates what type of media is carried over the connections of the contact.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/connect.ContactType.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ContactType</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="isConnected" class="tsd-anchor"></a>
+					<h3>is<wbr>Connected</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Connected<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:889</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Determine whether the contact is in a connected state.
+										Note that contacts no longer exist once they have been removed.
+									To detect these instances, subscribe to the <code>contact.onEnded()</code> event for the contact.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="isInbound" class="tsd-anchor"></a>
+					<h3>is<wbr>Inbound</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Inbound<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:882</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Determine whether this is an inbound or outbound contact.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="isSoftphoneCall" class="tsd-anchor"></a>
+					<h3>is<wbr>Softphone<wbr>Call</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Softphone<wbr>Call<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:879</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Determine whether this contact is a softphone call.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="notifyIssue" class="tsd-anchor"></a>
+					<h3>notify<wbr>Issue</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">notify<wbr>Issue<span class="tsd-signature-symbol">(</span>issueCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callbacks<span class="tsd-signature-symbol">?: </span><a href="../interfaces/connect.SuccessFailOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SuccessFailOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:923</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Provide diagnostic information for the contact in the case something exceptional happens on the front end.
+									The Streams logs will be published along with the issue code and description provided here.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>issueCode: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An arbitrary issue code to associate with the diagnostic report.</p>
+									</div>
+								</li>
+								<li>
+									<h5>description: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A description to associate with the diagnostic report.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callbacks: <a href="../interfaces/connect.SuccessFailOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SuccessFailOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Success and failure callbacks to determine whether the operation was successful.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="onACW" class="tsd-anchor"></a>
+					<h3>onACW</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">onACW<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:801</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Subscribe a method to be invoked whenever the contact enters the ACW state.
+									This is after the connection has been closed, but before the contact is destroyed.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A callback to receive the <code>Contact</code> API object instance.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="onAccepted" class="tsd-anchor"></a>
+					<h3>on<wbr>Accepted</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Accepted<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:769</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Subscribe a method to be invoked whenever the contact is accepted.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A callback to receive the <code>Contact</code> API object instance.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="onConnected" class="tsd-anchor"></a>
+					<h3>on<wbr>Connected</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Connected<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:808</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Subscribe a method to be invoked when the contact is connected.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A callback to receive the <code>Contact</code> API object instance.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="onConnecting" class="tsd-anchor"></a>
+					<h3>on<wbr>Connecting</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Connecting<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:762</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Subscribe a method to be invoked when the contact is connecting.
+										This works with chat and softphone contacts.
+										This event happens when a call or chat comes in, before accepting (there is an exception for queue callbacks, in which onConnecting&#39;s handler is executed after the callback is accepted).
+									Note that once the contact has been accepted, the <code>onAccepted</code> handler will be triggered.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A callback to receive the <code>Contact</code> API object instance.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="onDestroy" class="tsd-anchor"></a>
+					<h3>on<wbr>Destroy</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Destroy<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:793</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Subscribe a method to be invoked whenever the contact is destroyed.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A callback to receive the <code>Contact</code> API object instance.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="onEnded" class="tsd-anchor"></a>
+					<h3>on<wbr>Ended</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Ended<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:786</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Subscribe a method to be invoked whenever the contact is ended or destroyed.
+										This could be due to the conversation being ended by the agent, or due to the contact being missed.
+									Call <code>contact.getState()</code> to determine the state of the contact and take appropriate action.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A callback to receive the <code>Contact</code> API object instance.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="onIncoming" class="tsd-anchor"></a>
+					<h3>on<wbr>Incoming</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Incoming<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:744</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Subscribe a method to be invoked when a queue callback contact is incoming.
+									In this state, the contact is waiting to be accepted if it is a softphone call or is waiting for the agent to answer if it is not a softphone call.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A callback to receive the <code>Contact</code> API object instance.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="onMissed" class="tsd-anchor"></a>
+					<h3>on<wbr>Missed</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Missed<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:777</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Subscribe a method to be invoked whenever the contact is missed.
+									This is an event which is fired when a contact is put in state &quot;missed&quot; by the backend, which happens when the agent does not answer for a certain amount of time, when the agent rejects the call, or when the other participant hangs up before the agent can accept.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A callback to receive the <code>Contact</code> API object instance.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="onPending" class="tsd-anchor"></a>
+					<h3>on<wbr>Pending</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Pending<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:752</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Subscribe a method to be invoked when the contact is pending.
+									This event is expected to occur before the connecting event.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A callback to receive the <code>Contact</code> API object instance.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="onRefresh" class="tsd-anchor"></a>
+					<h3>on<wbr>Refresh</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Refresh<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:736</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Subscribe a method to be invoked whenever the contact is updated.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <a href="../modules/connect.html#ContactCallback" class="tsd-signature-type" data-tsd-kind="Type alias">ContactCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A callback to receive the <code>Contact</code> API object instance.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="toSnapshot" class="tsd-anchor"></a>
+					<h3>to<wbr>Snapshot</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Snapshot<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="connect.Contact.html" class="tsd-signature-type" data-tsd-kind="Class">Contact</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:957</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The data behind the <code>Contact</code> API object is ephemeral and changes whenever new data is provided.
+									This method provides an opportunity to create a snapshot version of the <code>Contact</code> API object and save it for future use, such as adding to a log file or posting elsewhere.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="connect.Contact.html" class="tsd-signature-type" data-tsd-kind="Class">Contact</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="toggleActiveConnections" class="tsd-anchor"></a>
+					<h3>toggle<wbr>Active<wbr>Connections</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">toggle<wbr>Active<wbr>Connections<span class="tsd-signature-symbol">(</span>callbacks<span class="tsd-signature-symbol">?: </span><a href="../interfaces/connect.SuccessFailOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SuccessFailOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:943</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Rotate through the connected and on hold connections of the contact.
+									This operation is only valid if there is at least one third-party connection and the initial connection is still connected.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callbacks: <a href="../interfaces/connect.SuccessFailOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SuccessFailOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Success and failure callbacks to determine whether the operation was successful.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Externals</span>
+					</li>
+					<li class="current tsd-kind-namespace tsd-is-external">
+						<a href="../modules/connect.html">connect</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-namespace tsd-is-external">
+						<a href="connect.Contact.html" class="tsd-kind-icon">Contact</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#contactId" class="tsd-kind-icon">contact<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#accept" class="tsd-kind-icon">accept</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#addConnection" class="tsd-kind-icon">add<wbr>Connection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#complete" class="tsd-kind-icon">complete</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#conferenceConnections" class="tsd-kind-icon">conference<wbr>Connections</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#destroy" class="tsd-kind-icon">destroy</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#getActiveInitialConnection" class="tsd-kind-icon">get<wbr>Active<wbr>Initial<wbr>Connection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#getAgentConnection" class="tsd-kind-icon">get<wbr>Agent<wbr>Connection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#getAttributes" class="tsd-kind-icon">get<wbr>Attributes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#getConnections" class="tsd-kind-icon">get<wbr>Connections</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#getContactId" class="tsd-kind-icon">get<wbr>Contact<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#getEventName" class="tsd-kind-icon">get<wbr>Event<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#getInitialConnection" class="tsd-kind-icon">get<wbr>Initial<wbr>Connection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#getInitialContactId" class="tsd-kind-icon">get<wbr>Initial<wbr>Contact<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#getOriginalContactId" class="tsd-kind-icon">get<wbr>Original<wbr>Contact<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#getQueue" class="tsd-kind-icon">get<wbr>Queue</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#getQueueTimestamp" class="tsd-kind-icon">get<wbr>Queue<wbr>Timestamp</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#getSingleActiveThirdPartyConnection" class="tsd-kind-icon">get<wbr>Single<wbr>Active<wbr>Third<wbr>Party<wbr>Connection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#getStatus" class="tsd-kind-icon">get<wbr>Status</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#getStatusDuration" class="tsd-kind-icon">get<wbr>Status<wbr>Duration</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#getThirdPartyConnections" class="tsd-kind-icon">get<wbr>Third<wbr>Party<wbr>Connections</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#getType" class="tsd-kind-icon">get<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#isConnected" class="tsd-kind-icon">is<wbr>Connected</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#isInbound" class="tsd-kind-icon">is<wbr>Inbound</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#isSoftphoneCall" class="tsd-kind-icon">is<wbr>Softphone<wbr>Call</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#notifyIssue" class="tsd-kind-icon">notify<wbr>Issue</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#onACW" class="tsd-kind-icon">onACW</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#onAccepted" class="tsd-kind-icon">on<wbr>Accepted</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#onConnected" class="tsd-kind-icon">on<wbr>Connected</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#onConnecting" class="tsd-kind-icon">on<wbr>Connecting</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#onDestroy" class="tsd-kind-icon">on<wbr>Destroy</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#onEnded" class="tsd-kind-icon">on<wbr>Ended</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#onIncoming" class="tsd-kind-icon">on<wbr>Incoming</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#onMissed" class="tsd-kind-icon">on<wbr>Missed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#onPending" class="tsd-kind-icon">on<wbr>Pending</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#onRefresh" class="tsd-kind-icon">on<wbr>Refresh</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#toSnapshot" class="tsd-kind-icon">to<wbr>Snapshot</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="connect.Contact.html#toggleActiveConnections" class="tsd-kind-icon">toggle<wbr>Active<wbr>Connections</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

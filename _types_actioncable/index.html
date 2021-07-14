@@ -1,0 +1,190 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@types/actioncable</title>
+	<meta name="description" content="Documentation for @types/actioncable">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@types/actioncable</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>@types/actioncable</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h1>Installation</h1>
+				</a>
+				<blockquote>
+					<p><code>npm install --save @types/actioncable</code></p>
+				</blockquote>
+				<a href="#summary" id="summary" style="color: inherit; text-decoration: none;">
+					<h1>Summary</h1>
+				</a>
+				<p>This package contains type definitions for ActionCable (<a href="https://github.com/rails/rails/tree/master/actioncable/app/assets/javascripts">https://github.com/rails/rails/tree/master/actioncable/app/assets/javascripts</a>).</p>
+				<a href="#details" id="details" style="color: inherit; text-decoration: none;">
+					<h1>Details</h1>
+				</a>
+				<p>Files were exported from <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/actioncable">https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/actioncable</a>.</p>
+				<a href="#indexdts" id="indexdts" style="color: inherit; text-decoration: none;">
+					<h2><a href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/actioncable/index.d.ts">index.d.ts</a></h2>
+				</a>
+				<pre><code class="language-ts"><span style="color: #008000">// Type definitions for ActionCable 5.2</span>
+<span style="color: #008000">// Project: https://github.com/rails/rails/tree/master/actioncable/app/assets/javascripts</span>
+<span style="color: #008000">// Definitions by: Vincent Zhu &lt;https://github.com/zhu1230&gt;</span>
+<span style="color: #008000">//                 Jared Szechy &lt;https://github.com/szechyjs&gt;</span>
+<span style="color: #008000">//                 David Mejorado &lt;https://github.com/davidmh&gt;</span>
+<span style="color: #008000">// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped</span>
+<span style="color: #008000">// TypeScript Version: 2.3</span>
+
+<span style="color: #0000FF">declare</span><span style="color: #000000"> </span><span style="color: #0000FF">module</span><span style="color: #000000"> </span><span style="color: #267F99">ActionCable</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">Channel</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #795E26">unsubscribe</span><span style="color: #000000">(): </span><span style="color: #267F99">void</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #795E26">perform</span><span style="color: #000000">(</span><span style="color: #001080">action</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">, </span><span style="color: #001080">data</span><span style="color: #000000">: {}): </span><span style="color: #267F99">void</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #795E26">send</span><span style="color: #000000">(</span><span style="color: #001080">data</span><span style="color: #000000">: </span><span style="color: #267F99">any</span><span style="color: #000000">): </span><span style="color: #267F99">boolean</span><span style="color: #000000">;</span>
+<span style="color: #000000">  }</span>
+
+<span style="color: #000000">  </span><span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">Subscriptions</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #795E26">create</span><span style="color: #000000">&lt;</span><span style="color: #267F99">T</span><span style="color: #000000"> </span><span style="color: #0000FF">extends</span><span style="color: #000000"> </span><span style="color: #267F99">CreateMixin</span><span style="color: #000000">&gt;(</span><span style="color: #001080">channel</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">|</span><span style="color: #267F99">ChannelNameWithParams</span><span style="color: #000000">, </span><span style="color: #001080">obj</span><span style="color: #000000">?: </span><span style="color: #267F99">T</span><span style="color: #000000"> &amp; </span><span style="color: #267F99">ThisType</span><span style="color: #000000">&lt;</span><span style="color: #267F99">Channel</span><span style="color: #000000">&gt;): </span><span style="color: #267F99">Channel</span><span style="color: #000000"> &amp; </span><span style="color: #267F99">T</span><span style="color: #000000">;</span>
+<span style="color: #000000">  }</span>
+
+<span style="color: #000000">  </span><span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">Cable</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">subscriptions</span><span style="color: #000000">: </span><span style="color: #267F99">Subscriptions</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #795E26">send</span><span style="color: #000000">(</span><span style="color: #001080">data</span><span style="color: #000000">: </span><span style="color: #267F99">any</span><span style="color: #000000">): </span><span style="color: #267F99">void</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #795E26">connect</span><span style="color: #000000">(): </span><span style="color: #267F99">void</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #795E26">disconnect</span><span style="color: #000000">(): </span><span style="color: #267F99">void</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #795E26">ensureActiveConnection</span><span style="color: #000000">(): </span><span style="color: #267F99">void</span><span style="color: #000000">;</span>
+<span style="color: #000000">  }</span>
+
+<span style="color: #000000">  </span><span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">CreateMixin</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #795E26">connected</span><span style="color: #000000">?(): </span><span style="color: #267F99">void</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #795E26">disconnected</span><span style="color: #000000">?(): </span><span style="color: #267F99">void</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #795E26">received</span><span style="color: #000000">?(</span><span style="color: #001080">obj</span><span style="color: #000000">: </span><span style="color: #267F99">any</span><span style="color: #000000">): </span><span style="color: #267F99">void</span><span style="color: #000000">;</span>
+<span style="color: #000000">    [</span><span style="color: #001080">key</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">]: </span><span style="color: #267F99">any</span><span style="color: #000000">;</span>
+<span style="color: #000000">  }</span>
+
+<span style="color: #000000">  </span><span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">ChannelNameWithParams</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">channel</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">;</span>
+<span style="color: #000000">    [</span><span style="color: #001080">key</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">]: </span><span style="color: #267F99">any</span><span style="color: #000000">;</span>
+<span style="color: #000000">  }</span>
+
+<span style="color: #000000">  </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">createConsumer</span><span style="color: #000000">(): </span><span style="color: #267F99">Cable</span><span style="color: #000000">;</span>
+<span style="color: #000000">  </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">createConsumer</span><span style="color: #000000">(</span><span style="color: #001080">url</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">): </span><span style="color: #267F99">Cable</span><span style="color: #000000">;</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #0000FF">declare</span><span style="color: #000000"> </span><span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">AppInterface</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #001080">cable</span><span style="color: #000000">?: </span><span style="color: #267F99">ActionCable</span><span style="color: #000000">.</span><span style="color: #267F99">Cable</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">  </span><span style="color: #001080">network</span><span style="color: #000000">?: </span><span style="color: #267F99">ActionCable</span><span style="color: #000000">.</span><span style="color: #267F99">Channel</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">;</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #0000FF">declare</span><span style="color: #000000"> </span><span style="color: #0000FF">var</span><span style="color: #000000"> </span><span style="color: #001080">App</span><span style="color: #000000">: </span><span style="color: #267F99">AppInterface</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">declare</span><span style="color: #000000"> </span><span style="color: #0000FF">module</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;actioncable&#039;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">export</span><span style="color: #000000"> = </span><span style="color: #001080">ActionCable</span><span style="color: #000000">;</span>
+<span style="color: #000000">}</span>
+
+</code></pre>
+				<a href="#additional-details" id="additional-details" style="color: inherit; text-decoration: none;">
+					<h3>Additional Details</h3>
+				</a>
+				<ul>
+					<li>Last updated: Fri, 09 Jul 2021 02:32:20 GMT</li>
+					<li>Dependencies: none</li>
+					<li>Global values: <code>ActionCable</code>, <code>App</code></li>
+				</ul>
+				<a href="#credits" id="credits" style="color: inherit; text-decoration: none;">
+					<h1>Credits</h1>
+				</a>
+				<p>These definitions were written by <a href="https://github.com/zhu1230">Vincent Zhu</a>, <a href="https://github.com/szechyjs">Jared Szechy</a>, and <a href="https://github.com/davidmh">David Mejorado</a>.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Externals</span>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-external">
+						<a href="modules/_actioncable_.html">&quot;actioncable&quot;</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-external">
+						<a href="modules/ActionCable.html">Action<wbr>Cable</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="interfaces/AppInterface.html" class="tsd-kind-icon">App<wbr>Interface</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-external">
+						<a href="modules.html#App" class="tsd-kind-icon">App</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>navigator | @types/atlassian-connect-js</title>
+	<meta name="description" content="Documentation for @types/atlassian-connect-js">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@types/atlassian-connect-js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">@types/atlassian-connect-js</a>
+				</li>
+				<li>
+					<a href="AP.html">AP</a>
+				</li>
+				<li>
+					<a href="AP.navigator.html">navigator</a>
+				</li>
+			</ul>
+			<h1>Namespace navigator</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The Navigator API allows your add-on to change the current page using JavaScript.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-is-external"><a href="../interfaces/AP.navigator.NavigatorContext.html" class="tsd-kind-icon">Navigator<wbr>Context</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-namespace tsd-is-external"><a href="AP.navigator.html#NavigatorTargetConfluence" class="tsd-kind-icon">Navigator<wbr>Target<wbr>Confluence</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-namespace tsd-is-external"><a href="AP.navigator.html#NavigatorTargetJira" class="tsd-kind-icon">Navigator<wbr>Target<wbr>Jira</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-namespace tsd-is-external"><a href="AP.navigator.html#getLocation" class="tsd-kind-icon">get<wbr>Location</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace tsd-is-external"><a href="AP.navigator.html#go" class="tsd-kind-icon">go</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace tsd-is-external"><a href="AP.navigator.html#reload" class="tsd-kind-icon">reload</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace tsd-is-external">
+					<a name="NavigatorTargetConfluence" class="tsd-anchor"></a>
+					<h3>Navigator<wbr>Target<wbr>Confluence</h3>
+					<div class="tsd-signature tsd-kind-icon">Navigator<wbr>Target<wbr>Confluence<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;contentview&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;contentedit&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;spaceview&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;spacetools&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;dashboard&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;userProfile&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;addonModule&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;contentlist&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;site&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.d.ts:1033</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace tsd-is-external">
+					<a name="NavigatorTargetJira" class="tsd-anchor"></a>
+					<h3>Navigator<wbr>Target<wbr>Jira</h3>
+					<div class="tsd-signature tsd-kind-icon">Navigator<wbr>Target<wbr>Jira<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;dashboard&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;issue&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;addonModule&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;userProfile&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;projectAdminSummary&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;projectAdminTabPanel&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;site&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.d.ts:997</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace tsd-is-external">
+					<a name="getLocation" class="tsd-anchor"></a>
+					<h3>get<wbr>Location</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Location<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>location<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:1185</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the context of the current page within the host application.</p>
+								</div>
+								<p>This method will provide a context object to the passed in callback. This context object will contain information about the page currently open in the host application.</p>
+								<p>The object will contain a target, which can be used when calling the go method, and a context map containing in formation about the opened page.</p>
+								<p>Currently this method supports two contexts in Confluence only:</p>
+								<p><strong>contentview</strong> - The host application is currently viewing a page, blog post or other content.</p>
+								<p><strong>contentedit</strong> - the host application is currently editing a page, blog post or other content.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <span class="tsd-signature-symbol">(</span>location<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>location<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>location: <span class="tsd-signature-type">string</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace tsd-is-external">
+					<a name="go" class="tsd-anchor"></a>
+					<h3>go</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">go<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="AP.navigator.html#NavigatorTargetJira" class="tsd-signature-type" data-tsd-kind="Type alias">NavigatorTargetJira</a><span class="tsd-signature-symbol"> | </span><a href="AP.navigator.html#NavigatorTargetConfluence" class="tsd-signature-type" data-tsd-kind="Type alias">NavigatorTargetConfluence</a>, context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/AP.navigator.NavigatorContext.html" class="tsd-signature-type" data-tsd-kind="Interface">NavigatorContext</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:1194</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Navigates the user from the current page to the specified page. This call navigates the host product, not the iframe content.</p>
+								</div>
+								<p>Requires a target location and the corresponding context. Navigating by passing a concrete url is currently unsupported.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="AP.navigator.html#NavigatorTargetJira" class="tsd-signature-type" data-tsd-kind="Type alias">NavigatorTargetJira</a><span class="tsd-signature-symbol"> | </span><a href="AP.navigator.html#NavigatorTargetConfluence" class="tsd-signature-type" data-tsd-kind="Type alias">NavigatorTargetConfluence</a></h5>
+								</li>
+								<li>
+									<h5>context: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/AP.navigator.NavigatorContext.html" class="tsd-signature-type" data-tsd-kind="Interface">NavigatorContext</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace tsd-is-external">
+					<a name="reload" class="tsd-anchor"></a>
+					<h3>reload</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">reload<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.d.ts:1199</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Triggers a reload of the parent page.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Externals</span>
+					</li>
+					<li class="current tsd-kind-namespace tsd-is-external">
+						<a href="AP.html">AP</a>
+						<ul>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="AP.confluence.html">confluence</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="AP.context.html">context</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="AP.cookie.html">cookie</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="AP.customContent.html">custom<wbr>Content</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="AP.dialog.html">dialog</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="AP.events.html">events</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="AP.flag.html">flag</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="AP.history.html">history</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="AP.host.html">host</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="AP.inlineDialog.html">inline<wbr>Dialog</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="AP.jira.html">jira</a>
+							</li>
+							<li class="current tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="AP.navigator.html">navigator</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace tsd-is-external">
+								<a href="AP.user.html">user</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-is-external">
+						<a href="../interfaces/AP.navigator.NavigatorContext.html" class="tsd-kind-icon">Navigator<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace tsd-is-external">
+						<a href="AP.navigator.html#NavigatorTargetConfluence" class="tsd-kind-icon">Navigator<wbr>Target<wbr>Confluence</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace tsd-is-external">
+						<a href="AP.navigator.html#NavigatorTargetJira" class="tsd-kind-icon">Navigator<wbr>Target<wbr>Jira</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace tsd-is-external">
+						<a href="AP.navigator.html#getLocation" class="tsd-kind-icon">get<wbr>Location</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace tsd-is-external">
+						<a href="AP.navigator.html#go" class="tsd-kind-icon">go</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace tsd-is-external">
+						<a href="AP.navigator.html#reload" class="tsd-kind-icon">reload</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+[91mError: [0m[96m../../node_modules/@types/node/console.d.ts[0m:[93m128[0m:[93m5[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'export='.
+
+[7m128[0m     export = globalThis.console;
+[7m   [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/@types/titanium/console.d.ts[0m:[93m112[0m:[93m12[0m
+    [7m112[0m   export = console;
+    [7m   [0m [96m           ~~~~~~~[0m
+    'export=' was also declared here.
+
+[91mError: [0m[96m../../node_modules/@types/node/globals.d.ts[0m:[93m46[0m:[93m13[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'require'.
+
+[7m46[0m declare var require: NodeRequire;
+[7m  [0m [91m            ~~~~~~~[0m
+
+  [96mnode_modules/@types/titanium/globals.d.ts[0m:[93m94[0m:[93m18[0m
+    [7m94[0m declare function require(moduleId: string): any;
+    [7m  [0m [96m                 ~~~~~~~[0m
+    'require' was also declared here.
+
+[91mError: [0m[96m../../node_modules/@types/node/globals.global.d.ts[0m:[93m1[0m:[93m13[0m - [91merror[0m[90m TS2403: [0mSubsequent variable declarations must have the same type.  Variable 'global' must be of type 'Global', but here has type 'typeof globalThis'.
+
+[7m1[0m declare var global: typeof globalThis;
+[7m [0m [91m            ~~~~~~[0m
+
+  [96mnode_modules/@types/titanium/globals.d.ts[0m:[93m57[0m:[93m13[0m
+    [7m57[0m declare var global: Titanium.Global;
+    [7m  [0m [96m            ~~~~~~[0m
+    'global' was also declared here.
+
+[91mError: [0m[96m../../node_modules/@types/node/timers.d.ts[0m:[93m18[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'setImmediate' does not exist on type 'Global'.
+
+[7m18[0m     let setImmediate: typeof global.setImmediate;
+[7m  [0m [91m                                    ~~~~~~~~~~~~[0m
+
+[91mError: [0m[96m../../node_modules/@types/node/timers.d.ts[0m:[93m19[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'clearImmediate' does not exist on type 'Global'.
+
+[7m19[0m     let clearImmediate: typeof global.clearImmediate;
+[7m  [0m [91m                                      ~~~~~~~~~~~~~~[0m
+
+[91mError: [0m[96mnode_modules/@types/titanium/console.d.ts[0m:[93m112[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'export='.
+
+[7m112[0m   export = console;
+[7m   [0m [91m           ~~~~~~~[0m
+
+  [96m../../node_modules/@types/node/console.d.ts[0m:[93m128[0m:[93m5[0m
+    [7m128[0m     export = globalThis.console;
+    [7m   [0m [96m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'export=' was also declared here.
+
+[91mError: [0m[96mnode_modules/@types/titanium/globals.d.ts[0m:[93m94[0m:[93m18[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'require'.
+
+[7m94[0m declare function require(moduleId: string): any;
+[7m  [0m [91m                 ~~~~~~~[0m
+
+  [96m../../node_modules/@types/node/globals.d.ts[0m:[93m46[0m:[93m13[0m
+    [7m46[0m declare var require: NodeRequire;
+    [7m  [0m [96m            ~~~~~~~[0m
+    'require' was also declared here.
+

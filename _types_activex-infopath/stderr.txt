@@ -1,0 +1,40 @@
+[91mError: [0m[96m../../node_modules/typescript/lib/lib.scripthost.d.ts[0m:[93m232[0m:[93m15[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'SafeArray'.
+
+[7m232[0m declare class SafeArray<T = any> {
+[7m   [0m [91m              ~~~~~~~~~[0m
+
+  [96mnode_modules/@types/activex-interop/index.d.ts[0m:[93m19[0m:[93m15[0m
+    [7m19[0m declare class SafeArray<T = any> {
+    [7m  [0m [96m              ~~~~~~~~~[0m
+    'SafeArray' was also declared here.
+
+[91mError: [0m[96m../../node_modules/typescript/lib/lib.scripthost.d.ts[0m:[93m316[0m:[93m15[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'VarDate'.
+
+[7m316[0m declare class VarDate {
+[7m   [0m [91m              ~~~~~~~[0m
+
+  [96mnode_modules/@types/activex-interop/index.d.ts[0m:[93m99[0m:[93m15[0m
+    [7m99[0m declare class VarDate {
+    [7m  [0m [96m              ~~~~~~~[0m
+    'VarDate' was also declared here.
+
+[91mError: [0m[96mnode_modules/@types/activex-interop/index.d.ts[0m:[93m19[0m:[93m15[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'SafeArray'.
+
+[7m19[0m declare class SafeArray<T = any> {
+[7m  [0m [91m              ~~~~~~~~~[0m
+
+  [96m../../node_modules/typescript/lib/lib.scripthost.d.ts[0m:[93m232[0m:[93m15[0m
+    [7m232[0m declare class SafeArray<T = any> {
+    [7m   [0m [96m              ~~~~~~~~~[0m
+    'SafeArray' was also declared here.
+
+[91mError: [0m[96mnode_modules/@types/activex-interop/index.d.ts[0m:[93m99[0m:[93m15[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'VarDate'.
+
+[7m99[0m declare class VarDate {
+[7m  [0m [91m              ~~~~~~~[0m
+
+  [96m../../node_modules/typescript/lib/lib.scripthost.d.ts[0m:[93m316[0m:[93m15[0m
+    [7m316[0m declare class VarDate {
+    [7m   [0m [96m              ~~~~~~~[0m
+    'VarDate' was also declared here.
+
