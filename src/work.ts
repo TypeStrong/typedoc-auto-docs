@@ -6,7 +6,7 @@
  * Install each library in targets.jsonc
  * Naively attempt to render docs from the npm package.  Very simple implementation.
  * - all docs output into a temp directory
- * 
+ *
  * It will *not*:
  * push the docs to gh pages
  * work on windows (probably)
@@ -16,22 +16,13 @@ import fsExtra from 'fs-extra';
 const { mkdirpSync, mkdtempSync, readFileSync, writeFileSync, readdirSync } = fsExtra;
 import { join, relative, resolve } from "path";
 import { fileURLToPath } from "url";
-import {ParseError as JsoncParseError} from 'jsonc-parser';
-import jsoncParser from 'jsonc-parser';
-const {parse: parseJsonc} = jsoncParser;
 import { $, nothrow } from 'zx';
 import { getPathToModuleEntrypoint } from './ts-entrypoint-resolver.js';
 import assert from 'assert';
+import { libsToBuild } from './targets.js';
 
 // Running as native ESM so we don't get __dirname
 const __root = resolve(fileURLToPath(import.meta.url), '../..');
-
-// Parse list of libs to render as .jsonc
-const errors: JsoncParseError[] = [];
-const libsToBuild = parseJsonc(readFileSync(join(__root, 'targets.jsonc'), 'utf8'), errors, {
-    allowTrailingComma: true,
-});
-if(errors.length) throw errors;
 
 // Create a temp directory to work in
 const tempDir = mkdtempSync(join(__root, 'tmp'));
@@ -109,7 +100,7 @@ for(const lib of libsToBuild) {
     // Empty typedoc.json to prevent typedoc from accidentally reading any other config files
     const typedocOptionsPath = join(workdir, `typedoc.json`);
     writeFileSync(typedocOptionsPath, JSON.stringify({}));
-    
+
     // NOTE not catching errors.  If non-zero exit code, will continue to the next lib
     const result = await nothrow($`typedoc --tsconfig ${tsconfigPath} --options ${typedocOptionsPath}`);
     if(result.exitCode !== 0) {
