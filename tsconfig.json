@@ -19,5 +19,6 @@
     "moduleResolution": "node",
     "types": ["node"],
     "esModuleInterop": true,
+    "jsx": "react"
   }
 }

@@ -13,7 +13,7 @@
  */
 
 import fsExtra from 'fs-extra';
-const { mkdirpSync, mkdtempSync, readFileSync, writeFileSync } = fsExtra;
+const { mkdirpSync, mkdtempSync, readFileSync, writeFileSync, readdirSync } = fsExtra;
 import { join, relative, resolve } from "path";
 import { fileURLToPath } from "url";
 import {ParseError as JsoncParseError} from 'jsonc-parser';
@@ -75,6 +75,21 @@ for(const lib of libsToBuild) {
         continue;
     }
 
+    // Build array of all directories to be classified as "external"
+    // In the future, we might be able to plug into typedoc and make "externals" be cross-linked.
+    let externalPattern: string[] = [];
+    for(const dir of readdirSync(join(workdir, 'node_modules'))) {
+        if(dir[0] === '@') {
+            for(const dir2 of readdirSync(join(workdir, 'node_modules', dir))) {
+                externalPattern.push(`${ join(workdir, 'node_modules', dir, dir2) }/**`);
+            }
+        } else {
+            externalPattern.push(`${ join(workdir, 'node_modules', dir) }/**`);
+        }
+    }
+    externalPattern = externalPattern.filter(v => v !== `${ join(workdir, 'node_modules', lib) }/**`);
+    externalPattern.push(`${ join(workdir, 'node_modules', lib, 'node_modules') }/**`);
+
     // typedoc needs a tsconfig file.  Create one
     const tsconfigPath = join(workdir, `tsconfig.json`);
     writeFileSync(tsconfigPath, JSON.stringify({
@@ -87,12 +102,16 @@ for(const lib of libsToBuild) {
         },
         typedocOptions: {
             entryPoints: [entrypointPath],
-            out: outDir
+            out: outDir,
+            externalPattern
         }
-    }));
+    }, null, 2));
+    // Empty typedoc.json to prevent typedoc from accidentally reading any other config files
+    const typedocOptionsPath = join(workdir, `typedoc.json`);
+    writeFileSync(typedocOptionsPath, JSON.stringify({}));
     
     // NOTE not catching errors.  If non-zero exit code, will continue to the next lib
-    const result = await nothrow($`typedoc --tsconfig ${tsconfigPath}`);
+    const result = await nothrow($`typedoc --tsconfig ${tsconfigPath} --options ${typedocOptionsPath}`);
     if(result.exitCode !== 0) {
         mkdirpSync(outDir);
         writeFileSync(join(outDir, 'index.html'), `
