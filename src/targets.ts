@@ -1,22 +1,22 @@
-[
+export const libsToBuild = [
   // comes from DefinitelyTyped
   // TODO should not have @types here
   // Scripts automatically figure out if we need to install from @types or not
   "@types/lodash",
-  
+
   // DefinitelyTyped and has complex globals and ambient declarations
   "@types/node",
 
   "outdent",
   "ts-node",
-  
+
   "typedoc",
   // "expect",
-  
+
   // they already use typedoc.  Will be interesting to see if our match or if they're broken:
   // https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/index.html
   // "@aws-sdk/client-dynamodb",
-  
+
   // Others to consider?
   // https://yarnpkg.com/api/
   // This one is in a monorepo; I think Gerrit0 recently added monorepo support to typedoc.
@@ -7623,4 +7623,4 @@
   // "@types/zumly",
   // "@types/zurb-twentytwenty",
   // "@types/zxcvbn",
-]
+];
