@@ -11,8 +11,8 @@
 
 import fsExtra from 'fs-extra';
 const { mkdirpSync, mkdtempSync, readFileSync, writeFileSync } = fsExtra;
-import { join, relative, resolve } from "path";
-import { fileURLToPath } from "url";
+import { join, relative, resolve } from 'path';
+import { fileURLToPath } from 'url';
 import { $, nothrow } from 'zx';
 import { getPathToModuleEntrypoint } from './ts-entrypoint-resolver.js';
 import assert from 'assert';
@@ -24,25 +24,27 @@ import { libsToBuild } from './targets.js';
 const __root = resolve(fileURLToPath(import.meta.url), '../..');
 
 const queue = new PQueue({
-    autoStart: true,
-    concurrency: 50,
+  autoStart: true,
+  concurrency: 50,
 });
 
-const results: Promise<{name: string, version: string}>[] = [];
+const results: Promise<{ name: string; version: string }>[] = [];
 // For each lib, render it
-for(const lib of libsToBuild) {
-    results.push(queue.add(async () => {
-        const response = await got(`https://registry.npmjs.org/${lib}`).json() as any;
-        return {
-            name: response.name,
-            version: response['dist-tags'].latest
-        };
-    }));
-    // TODO query the database
-    // If this version of this library has not been rendered, add it to the work queue.
+for (const lib of libsToBuild) {
+  results.push(
+    queue.add(async () => {
+      const response = (await got(`https://registry.npmjs.org/${lib}`).json()) as any;
+      return {
+        name: response.name,
+        version: response['dist-tags'].latest,
+      };
+    }),
+  );
+  // TODO query the database
+  // If this version of this library has not been rendered, add it to the work queue.
 }
 
-for(const promise of results) {
-    const result = await promise;
-    console.dir(result);
+for (const promise of results) {
+  const result = await promise;
+  console.dir(result);
 }

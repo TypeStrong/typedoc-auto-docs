@@ -14,8 +14,8 @@
 
 import fsExtra from 'fs-extra';
 const { mkdirpSync, mkdtempSync, readFileSync, writeFileSync, readdirSync } = fsExtra;
-import { join, relative, resolve } from "path";
-import { fileURLToPath } from "url";
+import { join, relative, resolve } from 'path';
+import { fileURLToPath } from 'url';
 import { $, nothrow } from 'zx';
 import { getPathToModuleEntrypoint } from './ts-entrypoint-resolver.js';
 import assert from 'assert';
@@ -30,98 +30,119 @@ const docsOutputRoot = join(tempDir, 'docs');
 await $`git worktree add --detach ${docsOutputRoot} orphan`;
 
 interface IndexEntry {
-    lib: string;
-    dir: string;
+  lib: string;
+  dir: string;
 }
 
 const indexEntries: IndexEntry[] = [];
 
 // For each lib, render it
-for(const lib of libsToBuild) {
-    const libSanitizedDir = lib.replace(/[@\/]/g, '_');
-    indexEntries.push({
-        lib, dir: libSanitizedDir
-    });
+for (const lib of libsToBuild) {
+  const libSanitizedDir = lib.replace(/[@\/]/g, '_');
+  indexEntries.push({
+    lib,
+    dir: libSanitizedDir,
+  });
 
-    const workdir = join(tempDir, libSanitizedDir);
+  const workdir = join(tempDir, libSanitizedDir);
 
-    mkdirpSync(workdir);
-    cd(workdir);
+  mkdirpSync(workdir);
+  cd(workdir);
 
-    // Create empty package.json, then ask yarn to install the lib as a dependency.
-    // This creates a node_modules directory
-    writeFileSync(join(workdir, 'package.json'), '{}');
-    await $`npm install --ignore-scripts ${lib}`;
+  // Create empty package.json, then ask yarn to install the lib as a dependency.
+  // This creates a node_modules directory
+  writeFileSync(join(workdir, 'package.json'), '{}');
+  await $`npm install --ignore-scripts ${lib}`;
 
-    // output docs to this directory
-    const outDir = join(docsOutputRoot, libSanitizedDir);
+  // output docs to this directory
+  const outDir = join(docsOutputRoot, libSanitizedDir);
 
-    // Figure out the lib's typings entrypoint (.d.ts not .js)
-    const entrypointPath = getPathToModuleEntrypoint(lib, workdir)!;
-    if(!entrypointPath) {
-        mkdirpSync(outDir);
-        writeFileSync(join(outDir, 'index.html'), `
+  // Figure out the lib's typings entrypoint (.d.ts not .js)
+  const entrypointPath = getPathToModuleEntrypoint(lib, workdir)!;
+  if (!entrypointPath) {
+    mkdirpSync(outDir);
+    writeFileSync(
+      join(outDir, 'index.html'),
+      `
             Failed because TS compiler could not determine entrypoint for library installed from npm.  Are you sure it bundles typings?
-        `);
-        continue;
-    }
+        `,
+    );
+    continue;
+  }
 
-    // Build array of all directories to be classified as "external"
-    // In the future, we might be able to plug into typedoc and make "externals" be cross-linked.
-    let externalPattern: string[] = [];
-    for(const dir of readdirSync(join(workdir, 'node_modules'))) {
-        if(dir[0] === '@') {
-            for(const dir2 of readdirSync(join(workdir, 'node_modules', dir))) {
-                externalPattern.push(`${ join(workdir, 'node_modules', dir, dir2) }/**`);
-            }
-        } else {
-            externalPattern.push(`${ join(workdir, 'node_modules', dir) }/**`);
-        }
+  // Build array of all directories to be classified as "external"
+  // In the future, we might be able to plug into typedoc and make "externals" be cross-linked.
+  let externalPattern: string[] = [];
+  for (const dir of readdirSync(join(workdir, 'node_modules'))) {
+    if (dir[0] === '@') {
+      for (const dir2 of readdirSync(join(workdir, 'node_modules', dir))) {
+        externalPattern.push(`${join(workdir, 'node_modules', dir, dir2)}/**`);
+      }
+    } else {
+      externalPattern.push(`${join(workdir, 'node_modules', dir)}/**`);
     }
-    externalPattern = externalPattern.filter(v => v !== `${ join(workdir, 'node_modules', lib) }/**`);
-    externalPattern.push(`${ join(workdir, 'node_modules', lib, 'node_modules') }/**`);
+  }
+  externalPattern = externalPattern.filter((v) => v !== `${join(workdir, 'node_modules', lib)}/**`);
+  externalPattern.push(`${join(workdir, 'node_modules', lib, 'node_modules')}/**`);
 
-    // typedoc needs a tsconfig file.  Create one
-    const tsconfigPath = join(workdir, `tsconfig.json`);
-    writeFileSync(tsconfigPath, JSON.stringify({
+  // typedoc needs a tsconfig file.  Create one
+  const tsconfigPath = join(workdir, `tsconfig.json`);
+  writeFileSync(
+    tsconfigPath,
+    JSON.stringify(
+      {
         files: [relative(workdir, entrypointPath)],
         compilerOptions: {
-            target: 'esnext',
-            module: 'esnext',
-            moduleResolution: 'node',
-            esModuleInterop: true
+          target: 'esnext',
+          module: 'esnext',
+          moduleResolution: 'node',
+          esModuleInterop: true,
         },
         typedocOptions: {
-            entryPoints: [entrypointPath],
-            out: outDir,
-            externalPattern
-        }
-    }, null, 2));
-    // Empty typedoc.json to prevent typedoc from accidentally reading any other config files
-    const typedocOptionsPath = join(workdir, `typedoc.json`);
-    writeFileSync(typedocOptionsPath, JSON.stringify({}));
+          entryPoints: [entrypointPath],
+          out: outDir,
+          externalPattern,
+        },
+      },
+      null,
+      2,
+    ),
+  );
+  // Empty typedoc.json to prevent typedoc from accidentally reading any other config files
+  const typedocOptionsPath = join(workdir, `typedoc.json`);
+  writeFileSync(typedocOptionsPath, JSON.stringify({}));
 
-    // NOTE not catching errors.  If non-zero exit code, will continue to the next lib
-    const result = await nothrow($`typedoc --tsconfig ${tsconfigPath} --options ${typedocOptionsPath}`);
-    if(result.exitCode !== 0) {
-        mkdirpSync(outDir);
-        writeFileSync(join(outDir, 'index.html'), `
+  // NOTE not catching errors.  If non-zero exit code, will continue to the next lib
+  const result = await nothrow(
+    $`typedoc --tsconfig ${tsconfigPath} --options ${typedocOptionsPath}`,
+  );
+  if (result.exitCode !== 0) {
+    mkdirpSync(outDir);
+    writeFileSync(
+      join(outDir, 'index.html'),
+      `
             typedoc failed.  <a href="stderr.txt">Stderr logs</a><a href="stdout.txt">Stdout logs</a>
-        `);
-        writeFileSync(join(outDir, 'stderr.txt'), result.stderr);
-        writeFileSync(join(outDir, 'stdout.txt'), result.stdout);
-    }
+        `,
+    );
+    writeFileSync(join(outDir, 'stderr.txt'), result.stderr);
+    writeFileSync(join(outDir, 'stdout.txt'), result.stdout);
+  }
 }
 
-writeFileSync(join(docsOutputRoot, 'index.html'), `
+writeFileSync(
+  join(docsOutputRoot, 'index.html'),
+  `
     <ul>
-    ${
-        indexEntries.map(({lib, dir}) => `
+    ${indexEntries
+      .map(
+        ({ lib, dir }) => `
             <li><a href="${dir}">${lib}</a></li>
-        `).join('')
-    }
+        `,
+      )
+      .join('')}
     </ul>
-`);
+`,
+);
 writeFileSync(join(docsOutputRoot, '.nojekyll'), '');
 
 await $`git -C ${docsOutputRoot} add --all`;

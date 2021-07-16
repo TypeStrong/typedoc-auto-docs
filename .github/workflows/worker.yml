@@ -2,10 +2,10 @@ name: Worker
 on:
   # nightly TODO should make this hourly when it's actually doing useful work
   schedule:
-    - cron:  '0 0 * * *'
+    - cron: '0 0 * * *'
 jobs:
   work:
-    name: "Work"
+    name: 'Work'
     runs-on: ubuntu-latest
     steps:
       # checkout code
