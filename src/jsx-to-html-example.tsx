@@ -4,7 +4,4 @@
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 
-ReactDOMServer.renderToStaticMarkup(
-    <html>
-    </html>
-);
+ReactDOMServer.renderToStaticMarkup(<html></html>);

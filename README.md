@@ -1,4 +1,5 @@
 # typedoc-auto-docs
+
 An idea from TS Discord to automatically render docs for the ecosystem, similar to docs.rs and doc.deno.land
 
 ## Motivation
@@ -11,8 +12,8 @@ An idea from TS Discord to automatically render docs for the ecosystem, similar 
 ## MVP non-goals
 
 - Extreme scale:
-  - we know an MVP will do things that are not scaleable.  We will implement the MVP with an eye towards eventual scale, but we'll make pragmatic choices in the short-term.
+  - we know an MVP will do things that are not scaleable. We will implement the MVP with an eye towards eventual scale, but we'll make pragmatic choices in the short-term.
 - Supporting every possible library
-  - in the JS ecosystem, libraries often do non-standard things.  The MVP will simply not support these libraries.
+  - in the JS ecosystem, libraries often do non-standard things. The MVP will simply not support these libraries.
   - They may eventually be supported if the value is high enough.
   - However, it may be more pragmatic to encourage those libraries to adjust and be more standard.
