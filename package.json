@@ -1,21 +1,24 @@
 {
   "type": "module",
   "scripts": {
+    "ts:check": "tsc --noEmit",
     "work": "./src/work.ts"
   },
   "dependencies": {
     "@swc/core": "^1.2.63",
     "@swc/helpers": "^0.2.12",
     "@types/node": "^16.3.2",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
     "@types/sql.js": "^1.4.2",
     "env2-shebang": "^0.0.2",
     "fs-extra": "^10.0.0",
     "got": "^11.8.2",
-    "jsonc-parser": "^3.0.0",
     "p-queue": "^7.1.0",
     "prettier": "^2.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "sql.js": "^1.5.0",
-    "strip-json-comments": "^3.1.1",
     "ts-node": "^10.1.0",
     "tslib": "^2.3.0",
     "typedoc": "^0.21.4",
