@@ -102,6 +102,7 @@ for (const lib of libsToBuild) {
           entryPoints: [entrypointPath],
           out: outDir,
           externalPattern,
+          plugin: [resolve(fileURLToPath(import.meta.url), '../unpkg-plugin/UnpkgPlugin.js')],
         },
       },
       null,

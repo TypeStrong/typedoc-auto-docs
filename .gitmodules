@@ -1,0 +1,3 @@
+[submodule "typedoc-plugin-sourcefile-url"]
+	path = typedoc-plugin-sourcefile-url
+	url = https://github.com/gdelmas/typedoc-plugin-sourcefile-url
