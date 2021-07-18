@@ -1,6 +1,11 @@
 {
   "extends": "@tsconfig/node16/tsconfig.json",
-  "include": ["src"],
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "src/unpkg-plugin"
+  ],
   "ts-node": {
     "transpileOnly": true
     // "transpiler": "ts-node/transpilers/swc-experimental"
@@ -17,8 +22,11 @@
     "isolatedModules": true,
     "strict": true,
     "moduleResolution": "node",
-    "types": ["node"],
+    "types": [
+      "node"
+    ],
     "esModuleInterop": true,
-    "jsx": "react"
+    "jsx": "react",
+    "experimentalDecorators": true
   }
 }
